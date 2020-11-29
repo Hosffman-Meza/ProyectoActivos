@@ -610,5 +610,23 @@ namespace WCF_DBADM
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ActTerreno_delete_Result1>("SP_ActTerreno_delete_Result", noRegistroActivosTerrenosParameter);
         }
+    
+        public virtual ObjectResult<SP_ActMobEquipo_detail_v2_Result> SP_ActMobEquipo_detail_v2_Result(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ActMobEquipo_detail_v2_Result>("SP_ActMobEquipo_detail_v2_Result", idParameter);
+        }
+    
+        public virtual ObjectResult<SP_ActTerreno_detail_v2_Result> SP_ActTerreno_detail_v2_Result(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("id", id) :
+                new ObjectParameter("id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_ActTerreno_detail_v2_Result>("SP_ActTerreno_detail_v2_Result", idParameter);
+        }
     }
 }

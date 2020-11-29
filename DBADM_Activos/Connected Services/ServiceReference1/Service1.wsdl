@@ -25,6 +25,12 @@
   <wsdl:message name="IService1_detailActMobEquipo_OutputMessage">
     <wsdl:part name="parameters" element="tns:detailActMobEquipoResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_detailActMobEquipo2_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailActMobEquipo2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailActMobEquipo2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailActMobEquipo2Response" />
+  </wsdl:message>
   <wsdl:message name="IService1_createActMobEquipo_InputMessage">
     <wsdl:part name="parameters" element="tns:createActMobEquipo" />
   </wsdl:message>
@@ -54,6 +60,12 @@
   </wsdl:message>
   <wsdl:message name="IService1_detailActTerreno_OutputMessage">
     <wsdl:part name="parameters" element="tns:detailActTerrenoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailActTerreno2_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailActTerreno2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailActTerreno2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailActTerreno2Response" />
   </wsdl:message>
   <wsdl:message name="IService1_createActTerreno_InputMessage">
     <wsdl:part name="parameters" element="tns:createActTerreno" />
@@ -236,6 +248,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailActMobEquipo" message="tns:IService1_detailActMobEquipo_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailActMobEquipoResponse" message="tns:IService1_detailActMobEquipo_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="detailActMobEquipo2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailActMobEquipo2" message="tns:IService1_detailActMobEquipo2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailActMobEquipo2Response" message="tns:IService1_detailActMobEquipo2_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="createActMobEquipo">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/createActMobEquipo" message="tns:IService1_createActMobEquipo_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/createActMobEquipoResponse" message="tns:IService1_createActMobEquipo_OutputMessage" />
@@ -255,6 +271,10 @@
     <wsdl:operation name="detailActTerreno">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailActTerreno" message="tns:IService1_detailActTerreno_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailActTerrenoResponse" message="tns:IService1_detailActTerreno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="detailActTerreno2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailActTerreno2" message="tns:IService1_detailActTerreno2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailActTerreno2Response" message="tns:IService1_detailActTerreno2_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="createActTerreno">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/createActTerreno" message="tns:IService1_createActTerreno_InputMessage" />
@@ -398,6 +418,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="detailActMobEquipo2">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailActMobEquipo2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="createActMobEquipo">
       <soap:operation soapAction="http://tempuri.org/IService1/createActMobEquipo" style="document" />
       <wsdl:input>
@@ -436,6 +465,15 @@
     </wsdl:operation>
     <wsdl:operation name="detailActTerreno">
       <soap:operation soapAction="http://tempuri.org/IService1/detailActTerreno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detailActTerreno2">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailActTerreno2" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

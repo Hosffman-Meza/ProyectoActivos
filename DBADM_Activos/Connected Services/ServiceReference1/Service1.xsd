@@ -41,6 +41,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="detailActMobEquipo2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailActMobEquipo2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailActMobEquipo2Result" nillable="true" type="q3:SP_ActMobEquipo_detail_v2_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="createActMobEquipo">
     <xs:complexType>
       <xs:sequence>
@@ -67,7 +81,7 @@
   <xs:element name="createActMobEquipoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createActMobEquipoResult" nillable="true" type="q3:SP_ActMobEquipo_insert_Result" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createActMobEquipoResult" nillable="true" type="q4:SP_ActMobEquipo_insert_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -96,7 +110,7 @@
   <xs:element name="editActMobEquipoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="editActMobEquipoResult" nillable="true" type="q4:SP_ActMobEquipo_update_Result" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="editActMobEquipoResult" nillable="true" type="q5:SP_ActMobEquipo_update_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -110,7 +124,7 @@
   <xs:element name="deleteActMobEquipoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteActMobEquipoResult" nillable="true" type="q5:SP_ActMobEquipo_delete_Result" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteActMobEquipoResult" nillable="true" type="q6:SP_ActMobEquipo_delete_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -122,7 +136,7 @@
   <xs:element name="listActTerrenoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listActTerrenoResult" nillable="true" type="q6:ArrayOfSP_ActTerreno_toList_Result" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listActTerrenoResult" nillable="true" type="q7:ArrayOfSP_ActTerreno_toList_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -136,7 +150,21 @@
   <xs:element name="detailActTerrenoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailActTerrenoResult" nillable="true" type="q7:SP_ActTerreno_detail_Result" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailActTerrenoResult" nillable="true" type="q8:SP_ActTerreno_detail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailActTerreno2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailActTerreno2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailActTerreno2Result" nillable="true" type="q9:SP_ActTerreno_detail_v2_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -161,7 +189,7 @@
   <xs:element name="createActTerrenoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createActTerrenoResult" nillable="true" type="q8:SP_ActTerreno_insert_Result" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createActTerrenoResult" nillable="true" type="q10:SP_ActTerreno_insert_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -188,7 +216,7 @@
   <xs:element name="editActTerrenoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="editActTerrenoResult" nillable="true" type="q9:SP_ActTerreno_update_Result" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="editActTerrenoResult" nillable="true" type="q11:SP_ActTerreno_update_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -202,7 +230,7 @@
   <xs:element name="deleteActTerrenoResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteActTerrenoResult" nillable="true" type="q10:SP_ActTerreno_delete_Result1" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteActTerrenoResult" nillable="true" type="q12:SP_ActTerreno_delete_Result1" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -214,7 +242,7 @@
   <xs:element name="listDepActEquiResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listDepActEquiResult" nillable="true" type="q11:ArrayOfSP_DepActEqui_toList_Result" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listDepActEquiResult" nillable="true" type="q13:ArrayOfSP_DepActEqui_toList_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -228,7 +256,7 @@
   <xs:element name="detailDepActEquiResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailDepActEquiResult" nillable="true" type="q12:SP_DepActEqui_detail_Result" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailDepActEquiResult" nillable="true" type="q14:SP_DepActEqui_detail_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -242,7 +270,7 @@
   <xs:element name="createDepActEquiResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createDepActEquiResult" nillable="true" type="q13:SP_DepActEqui_insert_Result" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createDepActEquiResult" nillable="true" type="q15:SP_DepActEqui_insert_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -257,7 +285,7 @@
   <xs:element name="updateDepActEquiResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateDepActEquiResult" nillable="true" type="q14:SP_DepActEqui_update_Result" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateDepActEquiResult" nillable="true" type="q16:SP_DepActEqui_update_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -271,7 +299,7 @@
   <xs:element name="deleteDepActEquiResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteDepActEquiResult" nillable="true" type="q15:SP_DepActEqui_delete_Result" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteDepActEquiResult" nillable="true" type="q17:SP_DepActEqui_delete_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -283,7 +311,7 @@
   <xs:element name="listEntidadResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listEntidadResult" nillable="true" type="q16:ArrayOfSP_Entidad_toList_Result" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listEntidadResult" nillable="true" type="q18:ArrayOfSP_Entidad_toList_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -297,7 +325,7 @@
   <xs:element name="detailEntidadResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailEntidadResult" nillable="true" type="q17:SP_Entidad_detail_Result" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailEntidadResult" nillable="true" type="q19:SP_Entidad_detail_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -315,7 +343,7 @@
   <xs:element name="createEntidadResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createEntidadResult" nillable="true" type="q18:SP_Entidad_insert_Result" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createEntidadResult" nillable="true" type="q20:SP_Entidad_insert_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -334,7 +362,7 @@
   <xs:element name="updateEntidadResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateEntidadResult" nillable="true" type="q19:SP_Entidad_update_Result" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateEntidadResult" nillable="true" type="q21:SP_Entidad_update_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -348,7 +376,7 @@
   <xs:element name="deleteEntidadResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteEntidadResult" nillable="true" type="q20:SP_Entidad_delete_Result" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteEntidadResult" nillable="true" type="q22:SP_Entidad_delete_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -360,7 +388,7 @@
   <xs:element name="listMetDepreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listMetDepreResult" nillable="true" type="q21:ArrayOfSP_MetDepre_toList_Result" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listMetDepreResult" nillable="true" type="q23:ArrayOfSP_MetDepre_toList_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -374,7 +402,7 @@
   <xs:element name="detailMetDepreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailMetDepreResult" nillable="true" type="q22:SP_MetDepre_deatail_Result" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailMetDepreResult" nillable="true" type="q24:SP_MetDepre_deatail_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -389,7 +417,7 @@
   <xs:element name="createMetDepreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createMetDepreResult" nillable="true" type="q23:SP_MetDepre_insert_Result" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createMetDepreResult" nillable="true" type="q25:SP_MetDepre_insert_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -405,7 +433,7 @@
   <xs:element name="updateMetDepreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateMetDepreResult" nillable="true" type="q24:SP_MetDepre_update_Result" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateMetDepreResult" nillable="true" type="q26:SP_MetDepre_update_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -419,7 +447,7 @@
   <xs:element name="deleteMetDepreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteMetDepreResult" nillable="true" type="q25:SP_MetDepre_delete_Result" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteMetDepreResult" nillable="true" type="q27:SP_MetDepre_delete_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -431,7 +459,7 @@
   <xs:element name="listSectorResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listSectorResult" nillable="true" type="q26:ArrayOfSP_Sectores_toList_Result" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listSectorResult" nillable="true" type="q28:ArrayOfSP_Sectores_toList_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -445,7 +473,7 @@
   <xs:element name="detailSectorResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailSectorResult" nillable="true" type="q27:SP_Sectores_detail_Result" />
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailSectorResult" nillable="true" type="q29:SP_Sectores_detail_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -460,7 +488,7 @@
   <xs:element name="createSectorResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createSectorResult" nillable="true" type="q28:SP_Sectores_insert_Result" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createSectorResult" nillable="true" type="q30:SP_Sectores_insert_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -476,7 +504,7 @@
   <xs:element name="updateSectorResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateSectorResult" nillable="true" type="q29:SP_Sectores_update_Result" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateSectorResult" nillable="true" type="q31:SP_Sectores_update_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -490,7 +518,7 @@
   <xs:element name="deleteSectorResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteSectorResult" nillable="true" type="q30:SP_Sectores_delete_Result" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteSectorResult" nillable="true" type="q32:SP_Sectores_delete_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -502,7 +530,7 @@
   <xs:element name="listTipoEdiConstruResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listTipoEdiConstruResult" nillable="true" type="q31:ArrayOfSP_TipoEdificioConstru_toList_Result" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listTipoEdiConstruResult" nillable="true" type="q33:ArrayOfSP_TipoEdificioConstru_toList_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -516,7 +544,7 @@
   <xs:element name="detailTipoEdiConstruResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailTipoEdiConstruResult" nillable="true" type="q32:SP_TipoEdificioConstru_detail_Result" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailTipoEdiConstruResult" nillable="true" type="q34:SP_TipoEdificioConstru_detail_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -531,7 +559,7 @@
   <xs:element name="createTipoEdiConstruResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createTipoEdiConstruResult" nillable="true" type="q33:SP_TipoEdificioConstru_insert_Result" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createTipoEdiConstruResult" nillable="true" type="q35:SP_TipoEdificioConstru_insert_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -547,7 +575,7 @@
   <xs:element name="updateTipoEdiConstruResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateTipoEdiConstruResult" nillable="true" type="q34:SP_TipoEdificioConstru_update_Result" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateTipoEdiConstruResult" nillable="true" type="q36:SP_TipoEdificioConstru_update_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -561,7 +589,7 @@
   <xs:element name="deleteTipoEdiConstruResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteTipoEdiConstruResult" nillable="true" type="q35:SP_TipoEdificioConstru_delte_Result" />
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteTipoEdiConstruResult" nillable="true" type="q37:SP_TipoEdificioConstru_delte_Result" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

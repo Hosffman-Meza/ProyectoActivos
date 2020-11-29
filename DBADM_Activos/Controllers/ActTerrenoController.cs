@@ -42,7 +42,7 @@ namespace DBADM_Activos.Controllers
 
             //VER QUE DEVUELVE SECTOR SI ID O OTRO CAMPO
 
-            var item = client.detailActTerreno(id);
+            var item = client.detailActTerreno2(id);
 
             actt.NoRegistroActivosTerrenos = item.NoRegistroActivosTerrenos;
             actt.FechaDeAdquisicionActivosTerrenos = item.FechaDeAdquisicionActivosTerrenos;
@@ -56,9 +56,9 @@ namespace DBADM_Activos.Controllers
             actt.CódigoContableActivosTerrenos = item.CódigoContableActivosTerrenos;
             actt.FechaDelAjustePorCréditoDePlusvalía = item.FechaDelAjustePorCréditoDePlusvalía;
             actt.CreadoPorTerrenos = item.CreadoPorTerrenos;
-            //actt.IdEntidad = item.IdEntidad;
-            actt.Sector = item.Sector;
-            //actt.IdEdificio = item.IdEdificio;
+            actt.IdEntidad = item.IDEntidad;
+            actt.IdSector = item.IdSector;
+            actt.IdEdificio = (int)item.IdTipoEdificioConstruido;
 
             return View(actt);
         }
@@ -80,7 +80,7 @@ namespace DBADM_Activos.Controllers
 
             //VER QUE DEVUELVE SECTOR SI ID O OTRO CAMPO
 
-            var item = client.detailActTerreno(id);
+            var item = client.detailActTerreno2(id);
 
             actt.NoRegistroActivosTerrenos = item.NoRegistroActivosTerrenos;
             actt.FechaDeAdquisicionActivosTerrenos = item.FechaDeAdquisicionActivosTerrenos;
@@ -94,9 +94,9 @@ namespace DBADM_Activos.Controllers
             actt.CódigoContableActivosTerrenos = item.CódigoContableActivosTerrenos;
             actt.FechaDelAjustePorCréditoDePlusvalía = item.FechaDelAjustePorCréditoDePlusvalía;
             actt.CreadoPorTerrenos = item.CreadoPorTerrenos;
-            //actt.IdEntidad = item.IdEntidad;
-            actt.Sector = item.Sector;
-            //actt.IdEdificio = item.IdEdificio;
+            actt.IdEntidad = item.IDEntidad;
+            actt.IdSector = item.IdSector;
+            actt.IdEdificio = (int)item.IdTipoEdificioConstruido;
 
             return View(actt);
         }

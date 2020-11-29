@@ -43,7 +43,7 @@ namespace DBADM_Activos.Controllers
             //SE DEBE CREAR OTRO SP DE DETALLE QUE TRAIGA (ENTIDAD, METDEPRE, DEPARTAMENTO) COMO INT (tiene que se esta)
             //O PONERLE UN SELECT AL UPDATE QUE RETORNE EL CODIGO DE LA ENTIDAD MEDIANTE EL NOMBRE
 
-            var item = client.detailActMobEquipo(id);
+            var item = client.detailActMobEquipo2(id);
 
             actm.IDMobiliarioEquipoOficina = item.IDMobiliarioEquipoOficina;
             actm.NombreMobiliarioEquiposOficina = item.NombreMobiliarioEquiposOficina;
@@ -60,9 +60,9 @@ namespace DBADM_Activos.Controllers
             actm.CaracterísticasGeneralesDelActivo = item.CaracterísticasGeneralesDelActivo;
             actm.CodificaciónDelControlador = item.CodificaciónDelControlador;
             actm.CreadoPorMobEquiOfic = item.CreadoPorMobEquiOfic;
-            //actm.IdEntidad = item.IdEntidad;
-            //actm.IdMetodo_Depreciación = item.IdMetodo_Depreciación;
-            //actm.IdDepartamento = item.IdDepartamento;
+            actm.IdEntidad = item.IDEntidad;
+            actm.IdMetodo_Depreciación = item.IdMetodosDepreciación;
+            actm.IdDepartamento = item.IdDepartamentoActivoEquipo;
 
             return View(actm);
         }
@@ -82,7 +82,7 @@ namespace DBADM_Activos.Controllers
             //SE DEBE CREAR OTRO SP DE DETALLE QUE TRAIGA (ENTIDAD, METDEPRE, DEPARTAMENTO) COMO INT (tiene que se esta)
             //O PONERLE UN SELECT AL UPDATE QUE RETORNE EL CODIGO DE LA ENTIDAD MEDIANTE EL NOMBRE
 
-            var item = client.detailActMobEquipo(id);
+            var item = client.detailActMobEquipo2(id);
 
             actm.IDMobiliarioEquipoOficina = item.IDMobiliarioEquipoOficina;
             actm.NombreMobiliarioEquiposOficina = item.NombreMobiliarioEquiposOficina;
@@ -99,9 +99,9 @@ namespace DBADM_Activos.Controllers
             actm.CaracterísticasGeneralesDelActivo = item.CaracterísticasGeneralesDelActivo;
             actm.CodificaciónDelControlador = item.CodificaciónDelControlador;
             actm.CreadoPorMobEquiOfic = item.CreadoPorMobEquiOfic;
-            //actm.IdEntidad = item.IdEntidad;
-            //actm.IdMetodo_Depreciación = item.IdMetodo_Depreciación;
-            //actm.IdDepartamento = item.IdDepartamento;
+            actm.IdEntidad = item.IDEntidad;
+            actm.IdMetodo_Depreciación = item.IdMetodosDepreciación;
+            actm.IdDepartamento = item.IdDepartamentoActivoEquipo;
 
             return View(actm);
         }

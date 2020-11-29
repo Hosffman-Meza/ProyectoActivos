@@ -109,6 +109,9 @@
     <Compile Include="SP_ActMobEquipo_detail_Result.cs">
       <DependentUpon>ModelControlActivos.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_ActMobEquipo_detail_v2_Result.cs">
+      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_ActMobEquipo_insert_Result.cs">
       <DependentUpon>ModelControlActivos.tt</DependentUpon>
     </Compile>
@@ -125,6 +128,9 @@
       <DependentUpon>ModelControlActivos.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_detail_Result.cs">
+      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ActTerreno_detail_v2_Result.cs">
       <DependentUpon>ModelControlActivos.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_insert_Result.cs">

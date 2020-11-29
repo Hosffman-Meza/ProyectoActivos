@@ -457,6 +457,323 @@ namespace DBADM_Activos.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SP_ActMobEquipo_detail_v2_Result", Namespace="http://schemas.datacontract.org/2004/07/WCF_DBADM")]
+    [System.SerializableAttribute()]
+    public partial class SP_ActMobEquipo_detail_v2_Result : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CaracterísticasDelBienField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CaracterísticasGeneralesDelActivoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CodificacionCostoDeAdquisiciónField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CodificaciónDelControladorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CodificaciónParaDepreciaciónAcumuladaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double CostosDeAdquisiciónField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreadoPorMobEquiOficField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime FechaDeAdquisiciónField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> FechaDepresiadoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDEntidadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDMobiliarioEquipoOficinaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdDepartamentoActivoEquipoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdMetodosDepreciaciónField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MarcaDelBienField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NombreMobiliarioEquiposOficinaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ReferenciasTécnicasDelBienField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TiempoDeVidaEstimadaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<double> ValorDeDepreciaciónAnualField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CaracterísticasDelBien {
+            get {
+                return this.CaracterísticasDelBienField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CaracterísticasDelBienField, value) != true)) {
+                    this.CaracterísticasDelBienField = value;
+                    this.RaisePropertyChanged("CaracterísticasDelBien");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CaracterísticasGeneralesDelActivo {
+            get {
+                return this.CaracterísticasGeneralesDelActivoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CaracterísticasGeneralesDelActivoField, value) != true)) {
+                    this.CaracterísticasGeneralesDelActivoField = value;
+                    this.RaisePropertyChanged("CaracterísticasGeneralesDelActivo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CodificacionCostoDeAdquisición {
+            get {
+                return this.CodificacionCostoDeAdquisiciónField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CodificacionCostoDeAdquisiciónField, value) != true)) {
+                    this.CodificacionCostoDeAdquisiciónField = value;
+                    this.RaisePropertyChanged("CodificacionCostoDeAdquisición");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CodificaciónDelControlador {
+            get {
+                return this.CodificaciónDelControladorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CodificaciónDelControladorField, value) != true)) {
+                    this.CodificaciónDelControladorField = value;
+                    this.RaisePropertyChanged("CodificaciónDelControlador");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CodificaciónParaDepreciaciónAcumulada {
+            get {
+                return this.CodificaciónParaDepreciaciónAcumuladaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CodificaciónParaDepreciaciónAcumuladaField, value) != true)) {
+                    this.CodificaciónParaDepreciaciónAcumuladaField = value;
+                    this.RaisePropertyChanged("CodificaciónParaDepreciaciónAcumulada");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double CostosDeAdquisición {
+            get {
+                return this.CostosDeAdquisiciónField;
+            }
+            set {
+                if ((this.CostosDeAdquisiciónField.Equals(value) != true)) {
+                    this.CostosDeAdquisiciónField = value;
+                    this.RaisePropertyChanged("CostosDeAdquisición");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreadoPorMobEquiOfic {
+            get {
+                return this.CreadoPorMobEquiOficField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreadoPorMobEquiOficField, value) != true)) {
+                    this.CreadoPorMobEquiOficField = value;
+                    this.RaisePropertyChanged("CreadoPorMobEquiOfic");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime FechaDeAdquisición {
+            get {
+                return this.FechaDeAdquisiciónField;
+            }
+            set {
+                if ((this.FechaDeAdquisiciónField.Equals(value) != true)) {
+                    this.FechaDeAdquisiciónField = value;
+                    this.RaisePropertyChanged("FechaDeAdquisición");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> FechaDepresiado {
+            get {
+                return this.FechaDepresiadoField;
+            }
+            set {
+                if ((this.FechaDepresiadoField.Equals(value) != true)) {
+                    this.FechaDepresiadoField = value;
+                    this.RaisePropertyChanged("FechaDepresiado");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IDEntidad {
+            get {
+                return this.IDEntidadField;
+            }
+            set {
+                if ((this.IDEntidadField.Equals(value) != true)) {
+                    this.IDEntidadField = value;
+                    this.RaisePropertyChanged("IDEntidad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IDMobiliarioEquipoOficina {
+            get {
+                return this.IDMobiliarioEquipoOficinaField;
+            }
+            set {
+                if ((this.IDMobiliarioEquipoOficinaField.Equals(value) != true)) {
+                    this.IDMobiliarioEquipoOficinaField = value;
+                    this.RaisePropertyChanged("IDMobiliarioEquipoOficina");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IdDepartamentoActivoEquipo {
+            get {
+                return this.IdDepartamentoActivoEquipoField;
+            }
+            set {
+                if ((this.IdDepartamentoActivoEquipoField.Equals(value) != true)) {
+                    this.IdDepartamentoActivoEquipoField = value;
+                    this.RaisePropertyChanged("IdDepartamentoActivoEquipo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IdMetodosDepreciación {
+            get {
+                return this.IdMetodosDepreciaciónField;
+            }
+            set {
+                if ((this.IdMetodosDepreciaciónField.Equals(value) != true)) {
+                    this.IdMetodosDepreciaciónField = value;
+                    this.RaisePropertyChanged("IdMetodosDepreciación");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MarcaDelBien {
+            get {
+                return this.MarcaDelBienField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MarcaDelBienField, value) != true)) {
+                    this.MarcaDelBienField = value;
+                    this.RaisePropertyChanged("MarcaDelBien");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NombreMobiliarioEquiposOficina {
+            get {
+                return this.NombreMobiliarioEquiposOficinaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NombreMobiliarioEquiposOficinaField, value) != true)) {
+                    this.NombreMobiliarioEquiposOficinaField = value;
+                    this.RaisePropertyChanged("NombreMobiliarioEquiposOficina");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ReferenciasTécnicasDelBien {
+            get {
+                return this.ReferenciasTécnicasDelBienField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ReferenciasTécnicasDelBienField, value) != true)) {
+                    this.ReferenciasTécnicasDelBienField = value;
+                    this.RaisePropertyChanged("ReferenciasTécnicasDelBien");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TiempoDeVidaEstimada {
+            get {
+                return this.TiempoDeVidaEstimadaField;
+            }
+            set {
+                if ((this.TiempoDeVidaEstimadaField.Equals(value) != true)) {
+                    this.TiempoDeVidaEstimadaField = value;
+                    this.RaisePropertyChanged("TiempoDeVidaEstimada");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<double> ValorDeDepreciaciónAnual {
+            get {
+                return this.ValorDeDepreciaciónAnualField;
+            }
+            set {
+                if ((this.ValorDeDepreciaciónAnualField.Equals(value) != true)) {
+                    this.ValorDeDepreciaciónAnualField = value;
+                    this.RaisePropertyChanged("ValorDeDepreciaciónAnual");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SP_ActMobEquipo_insert_Result", Namespace="http://schemas.datacontract.org/2004/07/WCF_DBADM")]
     [System.SerializableAttribute()]
     public partial class SP_ActMobEquipo_insert_Result : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -947,6 +1264,275 @@ namespace DBADM_Activos.ServiceReference1 {
                 if ((object.ReferenceEquals(this.SectorField, value) != true)) {
                     this.SectorField = value;
                     this.RaisePropertyChanged("Sector");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double TamañoDelTerrenoVsqr2ActivosTerrenos {
+            get {
+                return this.TamañoDelTerrenoVsqr2ActivosTerrenosField;
+            }
+            set {
+                if ((this.TamañoDelTerrenoVsqr2ActivosTerrenosField.Equals(value) != true)) {
+                    this.TamañoDelTerrenoVsqr2ActivosTerrenosField = value;
+                    this.RaisePropertyChanged("TamañoDelTerrenoVsqr2ActivosTerrenos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TasaCrecimiento {
+            get {
+                return this.TasaCrecimientoField;
+            }
+            set {
+                if ((this.TasaCrecimientoField.Equals(value) != true)) {
+                    this.TasaCrecimientoField = value;
+                    this.RaisePropertyChanged("TasaCrecimiento");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<double> ValorDeLaPlusvalía {
+            get {
+                return this.ValorDeLaPlusvalíaField;
+            }
+            set {
+                if ((this.ValorDeLaPlusvalíaField.Equals(value) != true)) {
+                    this.ValorDeLaPlusvalíaField = value;
+                    this.RaisePropertyChanged("ValorDeLaPlusvalía");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SP_ActTerreno_detail_v2_Result", Namespace="http://schemas.datacontract.org/2004/07/WCF_DBADM")]
+    [System.SerializableAttribute()]
+    public partial class SP_ActTerreno_detail_v2_Result : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double CostoDeAdquisiciónActivosTerrenosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double CostoTotalActualDelTerrenoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreadoPorTerrenosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CódigoContableActivosTerrenosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ExperimentoDeReevaluaciónParaPlusvalíaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime FechaDeAdquisicionActivosTerrenosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> FechaDeReevaluacionAplicadaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> FechaDelAjustePorCréditoDePlusvalíaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDEntidadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdSectorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> IdTipoEdificioConstruidoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int NoRegistroActivosTerrenosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double TamañoDelTerrenoVsqr2ActivosTerrenosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TasaCrecimientoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<double> ValorDeLaPlusvalíaField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double CostoDeAdquisiciónActivosTerrenos {
+            get {
+                return this.CostoDeAdquisiciónActivosTerrenosField;
+            }
+            set {
+                if ((this.CostoDeAdquisiciónActivosTerrenosField.Equals(value) != true)) {
+                    this.CostoDeAdquisiciónActivosTerrenosField = value;
+                    this.RaisePropertyChanged("CostoDeAdquisiciónActivosTerrenos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double CostoTotalActualDelTerreno {
+            get {
+                return this.CostoTotalActualDelTerrenoField;
+            }
+            set {
+                if ((this.CostoTotalActualDelTerrenoField.Equals(value) != true)) {
+                    this.CostoTotalActualDelTerrenoField = value;
+                    this.RaisePropertyChanged("CostoTotalActualDelTerreno");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreadoPorTerrenos {
+            get {
+                return this.CreadoPorTerrenosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreadoPorTerrenosField, value) != true)) {
+                    this.CreadoPorTerrenosField = value;
+                    this.RaisePropertyChanged("CreadoPorTerrenos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CódigoContableActivosTerrenos {
+            get {
+                return this.CódigoContableActivosTerrenosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CódigoContableActivosTerrenosField, value) != true)) {
+                    this.CódigoContableActivosTerrenosField = value;
+                    this.RaisePropertyChanged("CódigoContableActivosTerrenos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ExperimentoDeReevaluaciónParaPlusvalía {
+            get {
+                return this.ExperimentoDeReevaluaciónParaPlusvalíaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExperimentoDeReevaluaciónParaPlusvalíaField, value) != true)) {
+                    this.ExperimentoDeReevaluaciónParaPlusvalíaField = value;
+                    this.RaisePropertyChanged("ExperimentoDeReevaluaciónParaPlusvalía");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime FechaDeAdquisicionActivosTerrenos {
+            get {
+                return this.FechaDeAdquisicionActivosTerrenosField;
+            }
+            set {
+                if ((this.FechaDeAdquisicionActivosTerrenosField.Equals(value) != true)) {
+                    this.FechaDeAdquisicionActivosTerrenosField = value;
+                    this.RaisePropertyChanged("FechaDeAdquisicionActivosTerrenos");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> FechaDeReevaluacionAplicada {
+            get {
+                return this.FechaDeReevaluacionAplicadaField;
+            }
+            set {
+                if ((this.FechaDeReevaluacionAplicadaField.Equals(value) != true)) {
+                    this.FechaDeReevaluacionAplicadaField = value;
+                    this.RaisePropertyChanged("FechaDeReevaluacionAplicada");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> FechaDelAjustePorCréditoDePlusvalía {
+            get {
+                return this.FechaDelAjustePorCréditoDePlusvalíaField;
+            }
+            set {
+                if ((this.FechaDelAjustePorCréditoDePlusvalíaField.Equals(value) != true)) {
+                    this.FechaDelAjustePorCréditoDePlusvalíaField = value;
+                    this.RaisePropertyChanged("FechaDelAjustePorCréditoDePlusvalía");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IDEntidad {
+            get {
+                return this.IDEntidadField;
+            }
+            set {
+                if ((this.IDEntidadField.Equals(value) != true)) {
+                    this.IDEntidadField = value;
+                    this.RaisePropertyChanged("IDEntidad");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IdSector {
+            get {
+                return this.IdSectorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdSectorField, value) != true)) {
+                    this.IdSectorField = value;
+                    this.RaisePropertyChanged("IdSector");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> IdTipoEdificioConstruido {
+            get {
+                return this.IdTipoEdificioConstruidoField;
+            }
+            set {
+                if ((this.IdTipoEdificioConstruidoField.Equals(value) != true)) {
+                    this.IdTipoEdificioConstruidoField = value;
+                    this.RaisePropertyChanged("IdTipoEdificioConstruido");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int NoRegistroActivosTerrenos {
+            get {
+                return this.NoRegistroActivosTerrenosField;
+            }
+            set {
+                if ((this.NoRegistroActivosTerrenosField.Equals(value) != true)) {
+                    this.NoRegistroActivosTerrenosField = value;
+                    this.RaisePropertyChanged("NoRegistroActivosTerrenos");
                 }
             }
         }
@@ -2634,6 +3220,12 @@ namespace DBADM_Activos.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/detailActMobEquipo", ReplyAction="http://tempuri.org/IService1/detailActMobEquipoResponse")]
         System.Threading.Tasks.Task<DBADM_Activos.ServiceReference1.SP_ActMobEquipo_detail_Result> detailActMobEquipoAsync(int id);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/detailActMobEquipo2", ReplyAction="http://tempuri.org/IService1/detailActMobEquipo2Response")]
+        DBADM_Activos.ServiceReference1.SP_ActMobEquipo_detail_v2_Result detailActMobEquipo2(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/detailActMobEquipo2", ReplyAction="http://tempuri.org/IService1/detailActMobEquipo2Response")]
+        System.Threading.Tasks.Task<DBADM_Activos.ServiceReference1.SP_ActMobEquipo_detail_v2_Result> detailActMobEquipo2Async(int id);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createActMobEquipo", ReplyAction="http://tempuri.org/IService1/createActMobEquipoResponse")]
         DBADM_Activos.ServiceReference1.SP_ActMobEquipo_insert_Result createActMobEquipo(
                     int Id, 
@@ -2729,6 +3321,12 @@ namespace DBADM_Activos.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/detailActTerreno", ReplyAction="http://tempuri.org/IService1/detailActTerrenoResponse")]
         System.Threading.Tasks.Task<DBADM_Activos.ServiceReference1.SP_ActTerreno_detail_Result> detailActTerrenoAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/detailActTerreno2", ReplyAction="http://tempuri.org/IService1/detailActTerreno2Response")]
+        DBADM_Activos.ServiceReference1.SP_ActTerreno_detail_v2_Result detailActTerreno2(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/detailActTerreno2", ReplyAction="http://tempuri.org/IService1/detailActTerreno2Response")]
+        System.Threading.Tasks.Task<DBADM_Activos.ServiceReference1.SP_ActTerreno_detail_v2_Result> detailActTerreno2Async(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/createActTerreno", ReplyAction="http://tempuri.org/IService1/createActTerrenoResponse")]
         DBADM_Activos.ServiceReference1.SP_ActTerreno_insert_Result createActTerreno(int id, System.DateTime fechaAdqui, double tamanio, double costoAdqui, string exReevealuacion, int tasaCrecimiento, string codContabl, int idEntidad, string idSector, int tipoEdi, double valorPlus, System.DateTime fechaReevaluacion);
@@ -2950,6 +3548,14 @@ namespace DBADM_Activos.ServiceReference1 {
             return base.Channel.detailActMobEquipoAsync(id);
         }
         
+        public DBADM_Activos.ServiceReference1.SP_ActMobEquipo_detail_v2_Result detailActMobEquipo2(int id) {
+            return base.Channel.detailActMobEquipo2(id);
+        }
+        
+        public System.Threading.Tasks.Task<DBADM_Activos.ServiceReference1.SP_ActMobEquipo_detail_v2_Result> detailActMobEquipo2Async(int id) {
+            return base.Channel.detailActMobEquipo2Async(id);
+        }
+        
         public DBADM_Activos.ServiceReference1.SP_ActMobEquipo_insert_Result createActMobEquipo(
                     int Id, 
                     string name, 
@@ -3054,6 +3660,14 @@ namespace DBADM_Activos.ServiceReference1 {
         
         public System.Threading.Tasks.Task<DBADM_Activos.ServiceReference1.SP_ActTerreno_detail_Result> detailActTerrenoAsync(int id) {
             return base.Channel.detailActTerrenoAsync(id);
+        }
+        
+        public DBADM_Activos.ServiceReference1.SP_ActTerreno_detail_v2_Result detailActTerreno2(int id) {
+            return base.Channel.detailActTerreno2(id);
+        }
+        
+        public System.Threading.Tasks.Task<DBADM_Activos.ServiceReference1.SP_ActTerreno_detail_v2_Result> detailActTerreno2Async(int id) {
+            return base.Channel.detailActTerreno2Async(id);
         }
         
         public DBADM_Activos.ServiceReference1.SP_ActTerreno_insert_Result createActTerreno(int id, System.DateTime fechaAdqui, double tamanio, double costoAdqui, string exReevealuacion, int tasaCrecimiento, string codContabl, int idEntidad, string idSector, int tipoEdi, double valorPlus, System.DateTime fechaReevaluacion) {

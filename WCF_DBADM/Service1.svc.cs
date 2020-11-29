@@ -30,6 +30,11 @@ namespace WCF_DBADM
             return db.SP_ActMobEquipo_detail_Result(id).FirstOrDefault();
         }
 
+        public SP_ActMobEquipo_detail_v2_Result detailActMobEquipo2(int id)
+        {
+            return db.SP_ActMobEquipo_detail_v2_Result(id).FirstOrDefault();
+        }
+
         public SP_ActMobEquipo_insert_Result createActMobEquipo(int Id, string name, string caracteristicas, double costoAdqui, DateTime fechaAdqui, string marca, string refTecnica, int vidaEstimada, string codCostoAdqui, string codDepreAcu, string catGenerales, string codControlador, int idEntidad, int idMetodoDepre, int idDepActivoEqui, double valorDepreAnual, DateTime fechaDepresiado)
         {
             return db.SP_ActMobEquipo_insert_Result(Id, name, caracteristicas, costoAdqui, fechaAdqui, marca, refTecnica, vidaEstimada, codCostoAdqui, codDepreAcu, catGenerales, codControlador, idEntidad, idMetodoDepre, idDepActivoEqui, valorDepreAnual, fechaDepresiado).FirstOrDefault();
@@ -54,6 +59,11 @@ namespace WCF_DBADM
         public SP_ActTerreno_detail_Result detailActTerreno(int id)
         {
             return db.SP_ActTerreno_detail_Result(id).FirstOrDefault();
+        }
+
+        public SP_ActTerreno_detail_v2_Result detailActTerreno2(int id)
+        {
+            return db.SP_ActTerreno_detail_v2_Result(id).FirstOrDefault();
         }
 
         public SP_ActTerreno_insert_Result createActTerreno(int id, DateTime fechaAdqui, double tamanio, double costoAdqui, string exReevealuacion, int tasaCrecimiento, string codContabl, int idEntidad, string idSector, int tipoEdi, double valorPlus, DateTime fechaReevaluacion)

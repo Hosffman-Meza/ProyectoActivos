@@ -40,6 +40,29 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SP_ActMobEquipo_detail_Result" nillable="true" type="tns:SP_ActMobEquipo_detail_Result" />
+  <xs:complexType name="SP_ActMobEquipo_detail_v2_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaracterísticasDelBien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CaracterísticasGeneralesDelActivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodificacionCostoDeAdquisición" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodificaciónDelControlador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodificaciónParaDepreciaciónAcumulada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CostosDeAdquisición" type="xs:double" />
+      <xs:element minOccurs="0" name="CreadoPorMobEquiOfic" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaDeAdquisición" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaDepresiado" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IDEntidad" type="xs:int" />
+      <xs:element minOccurs="0" name="IDMobiliarioEquipoOficina" type="xs:int" />
+      <xs:element minOccurs="0" name="IdDepartamentoActivoEquipo" type="xs:int" />
+      <xs:element minOccurs="0" name="IdMetodosDepreciación" type="xs:int" />
+      <xs:element minOccurs="0" name="MarcaDelBien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreMobiliarioEquiposOficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenciasTécnicasDelBien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TiempoDeVidaEstimada" type="xs:int" />
+      <xs:element minOccurs="0" name="ValorDeDepreciaciónAnual" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActMobEquipo_detail_v2_Result" nillable="true" type="tns:SP_ActMobEquipo_detail_v2_Result" />
   <xs:complexType name="SP_ActMobEquipo_insert_Result">
     <xs:sequence>
       <xs:element minOccurs="0" name="estado" type="xs:int" />
@@ -96,6 +119,26 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SP_ActTerreno_detail_Result" nillable="true" type="tns:SP_ActTerreno_detail_Result" />
+  <xs:complexType name="SP_ActTerreno_detail_v2_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CostoDeAdquisiciónActivosTerrenos" type="xs:double" />
+      <xs:element minOccurs="0" name="CostoTotalActualDelTerreno" type="xs:double" />
+      <xs:element minOccurs="0" name="CreadoPorTerrenos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CódigoContableActivosTerrenos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExperimentoDeReevaluaciónParaPlusvalía" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaDeAdquisicionActivosTerrenos" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaDeReevaluacionAplicada" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaDelAjustePorCréditoDePlusvalía" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IDEntidad" type="xs:int" />
+      <xs:element minOccurs="0" name="IdSector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdTipoEdificioConstruido" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NoRegistroActivosTerrenos" type="xs:int" />
+      <xs:element minOccurs="0" name="TamañoDelTerrenoVsqr2ActivosTerrenos" type="xs:double" />
+      <xs:element minOccurs="0" name="TasaCrecimiento" type="xs:int" />
+      <xs:element minOccurs="0" name="ValorDeLaPlusvalía" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActTerreno_detail_v2_Result" nillable="true" type="tns:SP_ActTerreno_detail_v2_Result" />
   <xs:complexType name="SP_ActTerreno_insert_Result">
     <xs:sequence>
       <xs:element minOccurs="0" name="estado" type="xs:int" />

@@ -262,6 +262,12 @@
     <Content Include="Connected Services\ServiceReference1\DBADM_Activos.ServiceReference1.SP_TipoEdificioConstru_update_Result.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ServiceReference1\DBADM_Activos.ServiceReference1.SP_ActMobEquipo_detail_v2_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\DBADM_Activos.ServiceReference1.SP_ActTerreno_detail_v2_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ServiceReference1\Service1.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />

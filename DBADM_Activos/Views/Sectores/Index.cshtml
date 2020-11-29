@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DBADM_Activos.ServiceReference1.SP_Sectores_toList_Result>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo", "createSector", "Sectores")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DescripcionSector)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdSector)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescripcionSector)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdSector)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "editSector", new { id = item.IdSector }, null) |
+            @Html.ActionLink("Details", "detailSector", new { id = item.IdSector }, null) |
+            @Html.ActionLink("Delete", "deleteSector", new { id = item.IdSector }, null)
+        </td>
+    </tr>
+}
+
+</table>

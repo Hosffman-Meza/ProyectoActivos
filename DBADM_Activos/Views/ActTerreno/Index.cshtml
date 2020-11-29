@@ -1,0 +1,69 @@
+﻿@model IEnumerable<DBADM_Activos.ServiceReference1.SP_ActTerreno_toList_Result>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CostoDeAdquisiciónActivosTerrenos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CostoTotalActualDelTerreno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaDeAdquisicionActivosTerrenos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaDeReevaluacionAplicada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaDelAjustePorCréditoDePlusvalía)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoRegistroActivosTerrenos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorDeLaPlusvalía)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CostoDeAdquisiciónActivosTerrenos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CostoTotalActualDelTerreno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaDeAdquisicionActivosTerrenos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaDeReevaluacionAplicada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaDelAjustePorCréditoDePlusvalía)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoRegistroActivosTerrenos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorDeLaPlusvalía)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF_DBADM" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF_DBADM" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfSP_ActMobEquipo_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_ActMobEquipo_toList_Result" nillable="true" type="tns:SP_ActMobEquipo_toList_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSP_ActMobEquipo_toList_Result" nillable="true" type="tns:ArrayOfSP_ActMobEquipo_toList_Result" />
+  <xs:complexType name="SP_ActMobEquipo_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CostosDeAdquisición" type="xs:double" />
+      <xs:element minOccurs="0" name="FechaDeAdquisición" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MarcaDelBien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreMobiliarioEquiposOficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TiempoDeVidaEstimada" type="xs:int" />
+      <xs:element minOccurs="0" name="ValorDeDepreciaciónAnual" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActMobEquipo_toList_Result" nillable="true" type="tns:SP_ActMobEquipo_toList_Result" />
+  <xs:complexType name="SP_ActMobEquipo_detail_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaracterísticasDelBien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CaracterísticasGeneralesDelActivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodificacionCostoDeAdquisición" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodificaciónDelControlador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodificaciónParaDepreciaciónAcumulada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CostosDeAdquisición" type="xs:double" />
+      <xs:element minOccurs="0" name="CreadoPorMobEquiOfic" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaDeAdquisición" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaDepresiado" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IDMobiliarioEquipoOficina" type="xs:int" />
+      <xs:element minOccurs="0" name="MarcaDelBien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Metodo_Depreciación" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreMobiliarioEquiposOficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenciasTécnicasDelBien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TiempoDeVidaEstimada" type="xs:int" />
+      <xs:element minOccurs="0" name="ValorDeDepreciaciónAnual" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActMobEquipo_detail_Result" nillable="true" type="tns:SP_ActMobEquipo_detail_Result" />
+  <xs:complexType name="SP_ActMobEquipo_insert_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActMobEquipo_insert_Result" nillable="true" type="tns:SP_ActMobEquipo_insert_Result" />
+  <xs:complexType name="SP_ActMobEquipo_update_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActMobEquipo_update_Result" nillable="true" type="tns:SP_ActMobEquipo_update_Result" />
+  <xs:complexType name="SP_ActMobEquipo_delete_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActMobEquipo_delete_Result" nillable="true" type="tns:SP_ActMobEquipo_delete_Result" />
+  <xs:complexType name="ArrayOfSP_ActTerreno_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_ActTerreno_toList_Result" nillable="true" type="tns:SP_ActTerreno_toList_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSP_ActTerreno_toList_Result" nillable="true" type="tns:ArrayOfSP_ActTerreno_toList_Result" />
+  <xs:complexType name="SP_ActTerreno_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CostoDeAdquisiciónActivosTerrenos" type="xs:double" />
+      <xs:element minOccurs="0" name="CostoTotalActualDelTerreno" type="xs:double" />
+      <xs:element minOccurs="0" name="FechaDeAdquisicionActivosTerrenos" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaDeReevaluacionAplicada" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaDelAjustePorCréditoDePlusvalía" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NoRegistroActivosTerrenos" type="xs:int" />
+      <xs:element minOccurs="0" name="ValorDeLaPlusvalía" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActTerreno_toList_Result" nillable="true" type="tns:SP_ActTerreno_toList_Result" />
+  <xs:complexType name="SP_ActTerreno_detail_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CostoDeAdquisiciónActivosTerrenos" type="xs:double" />
+      <xs:element minOccurs="0" name="CostoTotalActualDelTerreno" type="xs:double" />
+      <xs:element minOccurs="0" name="CreadoPorTerrenos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CódigoContableActivosTerrenos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Edificio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Entidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExperimentoDeReevaluaciónParaPlusvalía" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaDeAdquisicionActivosTerrenos" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaDeReevaluacionAplicada" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaDelAjustePorCréditoDePlusvalía" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NoRegistroActivosTerrenos" type="xs:int" />
+      <xs:element minOccurs="0" name="Sector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TamañoDelTerrenoVsqr2ActivosTerrenos" type="xs:double" />
+      <xs:element minOccurs="0" name="TasaCrecimiento" type="xs:int" />
+      <xs:element minOccurs="0" name="ValorDeLaPlusvalía" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActTerreno_detail_Result" nillable="true" type="tns:SP_ActTerreno_detail_Result" />
+  <xs:complexType name="SP_ActTerreno_insert_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActTerreno_insert_Result" nillable="true" type="tns:SP_ActTerreno_insert_Result" />
+  <xs:complexType name="SP_ActTerreno_update_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActTerreno_update_Result" nillable="true" type="tns:SP_ActTerreno_update_Result" />
+  <xs:complexType name="SP_ActTerreno_delete_Result1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_ActTerreno_delete_Result1" nillable="true" type="tns:SP_ActTerreno_delete_Result1" />
+  <xs:complexType name="ArrayOfSP_DepActEqui_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_DepActEqui_toList_Result" nillable="true" type="tns:SP_DepActEqui_toList_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSP_DepActEqui_toList_Result" nillable="true" type="tns:ArrayOfSP_DepActEqui_toList_Result" />
+  <xs:complexType name="SP_DepActEqui_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdDepartamentoActivoEquipo" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreDepartamentoAsignado" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_DepActEqui_toList_Result" nillable="true" type="tns:SP_DepActEqui_toList_Result" />
+  <xs:complexType name="SP_DepActEqui_detail_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdDepartamentoActivoEquipo" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreDepartamentoAsignado" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_DepActEqui_detail_Result" nillable="true" type="tns:SP_DepActEqui_detail_Result" />
+  <xs:complexType name="SP_DepActEqui_insert_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_DepActEqui_insert_Result" nillable="true" type="tns:SP_DepActEqui_insert_Result" />
+  <xs:complexType name="SP_DepActEqui_update_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_DepActEqui_update_Result" nillable="true" type="tns:SP_DepActEqui_update_Result" />
+  <xs:complexType name="SP_DepActEqui_delete_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_DepActEqui_delete_Result" nillable="true" type="tns:SP_DepActEqui_delete_Result" />
+  <xs:complexType name="ArrayOfSP_Entidad_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_Entidad_toList_Result" nillable="true" type="tns:SP_Entidad_toList_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSP_Entidad_toList_Result" nillable="true" type="tns:ArrayOfSP_Entidad_toList_Result" />
+  <xs:complexType name="SP_Entidad_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DirecciónEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDEntidad" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RUCEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoEntidad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Entidad_toList_Result" nillable="true" type="tns:SP_Entidad_toList_Result" />
+  <xs:complexType name="SP_Entidad_detail_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DirecciónEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDEntidad" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RUCEntidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelefonoEntidad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Entidad_detail_Result" nillable="true" type="tns:SP_Entidad_detail_Result" />
+  <xs:complexType name="SP_Entidad_insert_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Entidad_insert_Result" nillable="true" type="tns:SP_Entidad_insert_Result" />
+  <xs:complexType name="SP_Entidad_update_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Entidad_update_Result" nillable="true" type="tns:SP_Entidad_update_Result" />
+  <xs:complexType name="SP_Entidad_delete_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Entidad_delete_Result" nillable="true" type="tns:SP_Entidad_delete_Result" />
+  <xs:complexType name="ArrayOfSP_MetDepre_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_MetDepre_toList_Result" nillable="true" type="tns:SP_MetDepre_toList_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSP_MetDepre_toList_Result" nillable="true" type="tns:ArrayOfSP_MetDepre_toList_Result" />
+  <xs:complexType name="SP_MetDepre_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaracteristicaMetodo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdMetodosDepreciación" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreMetodoDepreciación" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_MetDepre_toList_Result" nillable="true" type="tns:SP_MetDepre_toList_Result" />
+  <xs:complexType name="SP_MetDepre_deatail_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaracteristicaMetodo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdMetodosDepreciación" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreMetodoDepreciación" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_MetDepre_deatail_Result" nillable="true" type="tns:SP_MetDepre_deatail_Result" />
+  <xs:complexType name="SP_MetDepre_insert_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_MetDepre_insert_Result" nillable="true" type="tns:SP_MetDepre_insert_Result" />
+  <xs:complexType name="SP_MetDepre_update_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_MetDepre_update_Result" nillable="true" type="tns:SP_MetDepre_update_Result" />
+  <xs:complexType name="SP_MetDepre_delete_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_MetDepre_delete_Result" nillable="true" type="tns:SP_MetDepre_delete_Result" />
+  <xs:complexType name="ArrayOfSP_Sectores_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_Sectores_toList_Result" nillable="true" type="tns:SP_Sectores_toList_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSP_Sectores_toList_Result" nillable="true" type="tns:ArrayOfSP_Sectores_toList_Result" />
+  <xs:complexType name="SP_Sectores_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DescripcionSector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdSector" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Sectores_toList_Result" nillable="true" type="tns:SP_Sectores_toList_Result" />
+  <xs:complexType name="SP_Sectores_detail_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DescripcionSector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdSector" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Sectores_detail_Result" nillable="true" type="tns:SP_Sectores_detail_Result" />
+  <xs:complexType name="SP_Sectores_insert_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Sectores_insert_Result" nillable="true" type="tns:SP_Sectores_insert_Result" />
+  <xs:complexType name="SP_Sectores_update_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Sectores_update_Result" nillable="true" type="tns:SP_Sectores_update_Result" />
+  <xs:complexType name="SP_Sectores_delete_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_Sectores_delete_Result" nillable="true" type="tns:SP_Sectores_delete_Result" />
+  <xs:complexType name="ArrayOfSP_TipoEdificioConstru_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SP_TipoEdificioConstru_toList_Result" nillable="true" type="tns:SP_TipoEdificioConstru_toList_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSP_TipoEdificioConstru_toList_Result" nillable="true" type="tns:ArrayOfSP_TipoEdificioConstru_toList_Result" />
+  <xs:complexType name="SP_TipoEdificioConstru_toList_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DescripcionTipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdTipoEdificioConstruido" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreTipoEdificio" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_TipoEdificioConstru_toList_Result" nillable="true" type="tns:SP_TipoEdificioConstru_toList_Result" />
+  <xs:complexType name="SP_TipoEdificioConstru_detail_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DescripcionTipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdTipoEdificioConstruido" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreTipoEdificio" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_TipoEdificioConstru_detail_Result" nillable="true" type="tns:SP_TipoEdificioConstru_detail_Result" />
+  <xs:complexType name="SP_TipoEdificioConstru_insert_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_TipoEdificioConstru_insert_Result" nillable="true" type="tns:SP_TipoEdificioConstru_insert_Result" />
+  <xs:complexType name="SP_TipoEdificioConstru_update_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_TipoEdificioConstru_update_Result" nillable="true" type="tns:SP_TipoEdificioConstru_update_Result" />
+  <xs:complexType name="SP_TipoEdificioConstru_delte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SP_TipoEdificioConstru_delte_Result" nillable="true" type="tns:SP_TipoEdificioConstru_delte_Result" />
+</xs:schema>

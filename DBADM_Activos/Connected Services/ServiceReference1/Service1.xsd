@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:63955/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_DBADM" />
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listActMobEquipo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listActMobEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listActMobEquipoResult" nillable="true" type="q1:ArrayOfSP_ActMobEquipo_toList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailActMobEquipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailActMobEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailActMobEquipoResult" nillable="true" type="q2:SP_ActMobEquipo_detail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createActMobEquipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:int" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="caracteristicas" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="costoAdqui" type="xs:double" />
+        <xs:element minOccurs="0" name="fechaAdqui" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="marca" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="refTecnica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vidaEstimada" type="xs:int" />
+        <xs:element minOccurs="0" name="codCostoAdqui" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codDepreAcu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="catGenerales" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codControlador" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idEntidad" type="xs:int" />
+        <xs:element minOccurs="0" name="idMetodoDepre" type="xs:int" />
+        <xs:element minOccurs="0" name="idDepActivoEqui" type="xs:int" />
+        <xs:element minOccurs="0" name="valorDepreAnual" type="xs:double" />
+        <xs:element minOccurs="0" name="fechaDepresiado" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createActMobEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createActMobEquipoResult" nillable="true" type="q3:SP_ActMobEquipo_insert_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editActMobEquipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:int" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="caracteristicas" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="costoAdqui" type="xs:double" />
+        <xs:element minOccurs="0" name="fechaAdqui" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="marca" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="refTecnica" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vidaEstimada" type="xs:int" />
+        <xs:element minOccurs="0" name="codCostoAdqui" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codDepreAcu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="catGenerales" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codControlador" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idEntidad" type="xs:int" />
+        <xs:element minOccurs="0" name="idMetodoDepre" type="xs:int" />
+        <xs:element minOccurs="0" name="idDepActivoEqui" type="xs:int" />
+        <xs:element minOccurs="0" name="fechaDepresiado" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editActMobEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="editActMobEquipoResult" nillable="true" type="q4:SP_ActMobEquipo_update_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteActMobEquipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteActMobEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteActMobEquipoResult" nillable="true" type="q5:SP_ActMobEquipo_delete_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listActTerreno">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listActTerrenoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listActTerrenoResult" nillable="true" type="q6:ArrayOfSP_ActTerreno_toList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailActTerreno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailActTerrenoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailActTerrenoResult" nillable="true" type="q7:SP_ActTerreno_detail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createActTerreno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="fechaAdqui" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="tamanio" type="xs:double" />
+        <xs:element minOccurs="0" name="costoAdqui" type="xs:double" />
+        <xs:element minOccurs="0" name="exReevealuacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tasaCrecimiento" type="xs:int" />
+        <xs:element minOccurs="0" name="codContabl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idEntidad" type="xs:int" />
+        <xs:element minOccurs="0" name="idSector" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoEdi" type="xs:int" />
+        <xs:element minOccurs="0" name="valorPlus" type="xs:double" />
+        <xs:element minOccurs="0" name="fechaReevaluacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createActTerrenoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createActTerrenoResult" nillable="true" type="q8:SP_ActTerreno_insert_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editActTerreno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="fechaAdqui" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="tamanio" type="xs:double" />
+        <xs:element minOccurs="0" name="costoAdqui" type="xs:double" />
+        <xs:element minOccurs="0" name="exReevealuacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tasaCrecimiento" type="xs:int" />
+        <xs:element minOccurs="0" name="codContabl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idEntidad" type="xs:int" />
+        <xs:element minOccurs="0" name="idSector" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipoEdi" type="xs:int" />
+        <xs:element minOccurs="0" name="fechaAjusteCredito" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="valorPlus" type="xs:double" />
+        <xs:element minOccurs="0" name="costoActual" type="xs:double" />
+        <xs:element minOccurs="0" name="fechaReevaluacion" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editActTerrenoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="editActTerrenoResult" nillable="true" type="q9:SP_ActTerreno_update_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteActTerreno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteActTerrenoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteActTerrenoResult" nillable="true" type="q10:SP_ActTerreno_delete_Result1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listDepActEqui">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listDepActEquiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listDepActEquiResult" nillable="true" type="q11:ArrayOfSP_DepActEqui_toList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailDepActEqui">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailDepActEquiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailDepActEquiResult" nillable="true" type="q12:SP_DepActEqui_detail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createDepActEqui">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createDepActEquiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createDepActEquiResult" nillable="true" type="q13:SP_DepActEqui_insert_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateDepActEqui">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateDepActEquiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateDepActEquiResult" nillable="true" type="q14:SP_DepActEqui_update_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteDepActEqui">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteDepActEquiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteDepActEquiResult" nillable="true" type="q15:SP_DepActEqui_delete_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listEntidad">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listEntidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listEntidadResult" nillable="true" type="q16:ArrayOfSP_Entidad_toList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailEntidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailEntidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailEntidadResult" nillable="true" type="q17:SP_Entidad_detail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createEntidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="telefono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RUC" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createEntidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createEntidadResult" nillable="true" type="q18:SP_Entidad_insert_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateEntidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="direccion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="telefono" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RUC" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateEntidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateEntidadResult" nillable="true" type="q19:SP_Entidad_update_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteEntidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteEntidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteEntidadResult" nillable="true" type="q20:SP_Entidad_delete_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listMetDepre">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listMetDepreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listMetDepreResult" nillable="true" type="q21:ArrayOfSP_MetDepre_toList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailMetDepre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailMetDepreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailMetDepreResult" nillable="true" type="q22:SP_MetDepre_deatail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createMetDepre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="caracteristica" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createMetDepreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createMetDepreResult" nillable="true" type="q23:SP_MetDepre_insert_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateMetDepre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="caracteristica" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateMetDepreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateMetDepreResult" nillable="true" type="q24:SP_MetDepre_update_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteMetDepre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteMetDepreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteMetDepreResult" nillable="true" type="q25:SP_MetDepre_delete_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listSector">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listSectorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listSectorResult" nillable="true" type="q26:ArrayOfSP_Sectores_toList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailSector">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailSectorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailSectorResult" nillable="true" type="q27:SP_Sectores_detail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createSector">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createSectorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createSectorResult" nillable="true" type="q28:SP_Sectores_insert_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateSector">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateSectorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateSectorResult" nillable="true" type="q29:SP_Sectores_update_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteSector">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteSectorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteSectorResult" nillable="true" type="q30:SP_Sectores_delete_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listTipoEdiConstru">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listTipoEdiConstruResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="listTipoEdiConstruResult" nillable="true" type="q31:ArrayOfSP_TipoEdificioConstru_toList_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailTipoEdiConstru">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detailTipoEdiConstruResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="detailTipoEdiConstruResult" nillable="true" type="q32:SP_TipoEdificioConstru_detail_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createTipoEdiConstru">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createTipoEdiConstruResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="createTipoEdiConstruResult" nillable="true" type="q33:SP_TipoEdificioConstru_insert_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateTipoEdiConstru">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateTipoEdiConstruResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="updateTipoEdiConstruResult" nillable="true" type="q34:SP_TipoEdificioConstru_update_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteTipoEdiConstru">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteTipoEdiConstruResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/WCF_DBADM" minOccurs="0" name="deleteTipoEdiConstruResult" nillable="true" type="q35:SP_TipoEdificioConstru_delte_Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

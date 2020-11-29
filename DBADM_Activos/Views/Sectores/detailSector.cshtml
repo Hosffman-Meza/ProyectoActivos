@@ -1,0 +1,42 @@
+﻿@model DBADM_Activos.Models.SectoresCLS
+
+@{
+    ViewBag.Title = "detailSector";
+}
+
+<h2>detailSector</h2>
+
+<div>
+    <h4>SectoresCLS</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdSector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdSector)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionSector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionSector)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewIdSector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewIdSector)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63955/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63955/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63955/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_DBADM" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listActMobEquipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listActMobEquipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listActMobEquipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listActMobEquipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailActMobEquipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailActMobEquipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailActMobEquipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailActMobEquipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createActMobEquipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:createActMobEquipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createActMobEquipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createActMobEquipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editActMobEquipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:editActMobEquipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editActMobEquipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editActMobEquipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteActMobEquipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteActMobEquipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteActMobEquipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteActMobEquipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listActTerreno_InputMessage">
+    <wsdl:part name="parameters" element="tns:listActTerreno" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listActTerreno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listActTerrenoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailActTerreno_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailActTerreno" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailActTerreno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailActTerrenoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createActTerreno_InputMessage">
+    <wsdl:part name="parameters" element="tns:createActTerreno" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createActTerreno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createActTerrenoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editActTerreno_InputMessage">
+    <wsdl:part name="parameters" element="tns:editActTerreno" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editActTerreno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editActTerrenoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteActTerreno_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteActTerreno" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteActTerreno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteActTerrenoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listDepActEqui_InputMessage">
+    <wsdl:part name="parameters" element="tns:listDepActEqui" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listDepActEqui_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listDepActEquiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailDepActEqui_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailDepActEqui" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailDepActEqui_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailDepActEquiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createDepActEqui_InputMessage">
+    <wsdl:part name="parameters" element="tns:createDepActEqui" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createDepActEqui_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createDepActEquiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateDepActEqui_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateDepActEqui" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateDepActEqui_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateDepActEquiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteDepActEqui_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteDepActEqui" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteDepActEqui_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteDepActEquiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:listEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:createEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listMetDepre_InputMessage">
+    <wsdl:part name="parameters" element="tns:listMetDepre" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listMetDepre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listMetDepreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailMetDepre_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailMetDepre" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailMetDepre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailMetDepreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createMetDepre_InputMessage">
+    <wsdl:part name="parameters" element="tns:createMetDepre" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createMetDepre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createMetDepreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateMetDepre_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateMetDepre" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateMetDepre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateMetDepreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteMetDepre_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMetDepre" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteMetDepre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteMetDepreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listSector_InputMessage">
+    <wsdl:part name="parameters" element="tns:listSector" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listSector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listSectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailSector_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailSector" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailSector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailSectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createSector_InputMessage">
+    <wsdl:part name="parameters" element="tns:createSector" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createSector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createSectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateSector_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateSector" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateSector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateSectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteSector_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteSector" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteSector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteSectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listTipoEdiConstru_InputMessage">
+    <wsdl:part name="parameters" element="tns:listTipoEdiConstru" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listTipoEdiConstru_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listTipoEdiConstruResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailTipoEdiConstru_InputMessage">
+    <wsdl:part name="parameters" element="tns:detailTipoEdiConstru" />
+  </wsdl:message>
+  <wsdl:message name="IService1_detailTipoEdiConstru_OutputMessage">
+    <wsdl:part name="parameters" element="tns:detailTipoEdiConstruResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createTipoEdiConstru_InputMessage">
+    <wsdl:part name="parameters" element="tns:createTipoEdiConstru" />
+  </wsdl:message>
+  <wsdl:message name="IService1_createTipoEdiConstru_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createTipoEdiConstruResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateTipoEdiConstru_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateTipoEdiConstru" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateTipoEdiConstru_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateTipoEdiConstruResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteTipoEdiConstru_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteTipoEdiConstru" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteTipoEdiConstru_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteTipoEdiConstruResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listActMobEquipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listActMobEquipo" message="tns:IService1_listActMobEquipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listActMobEquipoResponse" message="tns:IService1_listActMobEquipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="detailActMobEquipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailActMobEquipo" message="tns:IService1_detailActMobEquipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailActMobEquipoResponse" message="tns:IService1_detailActMobEquipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createActMobEquipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createActMobEquipo" message="tns:IService1_createActMobEquipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createActMobEquipoResponse" message="tns:IService1_createActMobEquipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editActMobEquipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editActMobEquipo" message="tns:IService1_editActMobEquipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editActMobEquipoResponse" message="tns:IService1_editActMobEquipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteActMobEquipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteActMobEquipo" message="tns:IService1_deleteActMobEquipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteActMobEquipoResponse" message="tns:IService1_deleteActMobEquipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listActTerreno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listActTerreno" message="tns:IService1_listActTerreno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listActTerrenoResponse" message="tns:IService1_listActTerreno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="detailActTerreno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailActTerreno" message="tns:IService1_detailActTerreno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailActTerrenoResponse" message="tns:IService1_detailActTerreno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createActTerreno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createActTerreno" message="tns:IService1_createActTerreno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createActTerrenoResponse" message="tns:IService1_createActTerreno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editActTerreno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editActTerreno" message="tns:IService1_editActTerreno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editActTerrenoResponse" message="tns:IService1_editActTerreno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteActTerreno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteActTerreno" message="tns:IService1_deleteActTerreno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteActTerrenoResponse" message="tns:IService1_deleteActTerreno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listDepActEqui">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listDepActEqui" message="tns:IService1_listDepActEqui_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listDepActEquiResponse" message="tns:IService1_listDepActEqui_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="detailDepActEqui">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailDepActEqui" message="tns:IService1_detailDepActEqui_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailDepActEquiResponse" message="tns:IService1_detailDepActEqui_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createDepActEqui">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createDepActEqui" message="tns:IService1_createDepActEqui_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createDepActEquiResponse" message="tns:IService1_createDepActEqui_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDepActEqui">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateDepActEqui" message="tns:IService1_updateDepActEqui_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateDepActEquiResponse" message="tns:IService1_updateDepActEqui_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDepActEqui">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteDepActEqui" message="tns:IService1_deleteDepActEqui_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteDepActEquiResponse" message="tns:IService1_deleteDepActEqui_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listEntidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listEntidad" message="tns:IService1_listEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listEntidadResponse" message="tns:IService1_listEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="detailEntidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailEntidad" message="tns:IService1_detailEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailEntidadResponse" message="tns:IService1_detailEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createEntidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createEntidad" message="tns:IService1_createEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createEntidadResponse" message="tns:IService1_createEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateEntidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateEntidad" message="tns:IService1_updateEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateEntidadResponse" message="tns:IService1_updateEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteEntidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteEntidad" message="tns:IService1_deleteEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteEntidadResponse" message="tns:IService1_deleteEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listMetDepre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listMetDepre" message="tns:IService1_listMetDepre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listMetDepreResponse" message="tns:IService1_listMetDepre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="detailMetDepre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailMetDepre" message="tns:IService1_detailMetDepre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailMetDepreResponse" message="tns:IService1_detailMetDepre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createMetDepre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createMetDepre" message="tns:IService1_createMetDepre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createMetDepreResponse" message="tns:IService1_createMetDepre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateMetDepre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateMetDepre" message="tns:IService1_updateMetDepre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateMetDepreResponse" message="tns:IService1_updateMetDepre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteMetDepre">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteMetDepre" message="tns:IService1_deleteMetDepre_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteMetDepreResponse" message="tns:IService1_deleteMetDepre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listSector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listSector" message="tns:IService1_listSector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listSectorResponse" message="tns:IService1_listSector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="detailSector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailSector" message="tns:IService1_detailSector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailSectorResponse" message="tns:IService1_detailSector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createSector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createSector" message="tns:IService1_createSector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createSectorResponse" message="tns:IService1_createSector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateSector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateSector" message="tns:IService1_updateSector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateSectorResponse" message="tns:IService1_updateSector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteSector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteSector" message="tns:IService1_deleteSector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteSectorResponse" message="tns:IService1_deleteSector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listTipoEdiConstru">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listTipoEdiConstru" message="tns:IService1_listTipoEdiConstru_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listTipoEdiConstruResponse" message="tns:IService1_listTipoEdiConstru_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="detailTipoEdiConstru">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/detailTipoEdiConstru" message="tns:IService1_detailTipoEdiConstru_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/detailTipoEdiConstruResponse" message="tns:IService1_detailTipoEdiConstru_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createTipoEdiConstru">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/createTipoEdiConstru" message="tns:IService1_createTipoEdiConstru_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/createTipoEdiConstruResponse" message="tns:IService1_createTipoEdiConstru_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTipoEdiConstru">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateTipoEdiConstru" message="tns:IService1_updateTipoEdiConstru_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateTipoEdiConstruResponse" message="tns:IService1_updateTipoEdiConstru_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteTipoEdiConstru">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteTipoEdiConstru" message="tns:IService1_deleteTipoEdiConstru_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteTipoEdiConstruResponse" message="tns:IService1_deleteTipoEdiConstru_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listActMobEquipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/listActMobEquipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detailActMobEquipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailActMobEquipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createActMobEquipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/createActMobEquipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editActMobEquipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/editActMobEquipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteActMobEquipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteActMobEquipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listActTerreno">
+      <soap:operation soapAction="http://tempuri.org/IService1/listActTerreno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detailActTerreno">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailActTerreno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createActTerreno">
+      <soap:operation soapAction="http://tempuri.org/IService1/createActTerreno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editActTerreno">
+      <soap:operation soapAction="http://tempuri.org/IService1/editActTerreno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteActTerreno">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteActTerreno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listDepActEqui">
+      <soap:operation soapAction="http://tempuri.org/IService1/listDepActEqui" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detailDepActEqui">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailDepActEqui" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createDepActEqui">
+      <soap:operation soapAction="http://tempuri.org/IService1/createDepActEqui" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDepActEqui">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateDepActEqui" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDepActEqui">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteDepActEqui" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listEntidad">
+      <soap:operation soapAction="http://tempuri.org/IService1/listEntidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detailEntidad">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailEntidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createEntidad">
+      <soap:operation soapAction="http://tempuri.org/IService1/createEntidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEntidad">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateEntidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEntidad">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteEntidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listMetDepre">
+      <soap:operation soapAction="http://tempuri.org/IService1/listMetDepre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detailMetDepre">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailMetDepre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createMetDepre">
+      <soap:operation soapAction="http://tempuri.org/IService1/createMetDepre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateMetDepre">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateMetDepre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteMetDepre">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteMetDepre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listSector">
+      <soap:operation soapAction="http://tempuri.org/IService1/listSector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detailSector">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailSector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createSector">
+      <soap:operation soapAction="http://tempuri.org/IService1/createSector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSector">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateSector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSector">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteSector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listTipoEdiConstru">
+      <soap:operation soapAction="http://tempuri.org/IService1/listTipoEdiConstru" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="detailTipoEdiConstru">
+      <soap:operation soapAction="http://tempuri.org/IService1/detailTipoEdiConstru" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createTipoEdiConstru">
+      <soap:operation soapAction="http://tempuri.org/IService1/createTipoEdiConstru" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTipoEdiConstru">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateTipoEdiConstru" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteTipoEdiConstru">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteTipoEdiConstru" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:63955/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

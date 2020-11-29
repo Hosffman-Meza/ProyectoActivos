@@ -1,0 +1,948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ControlActivosModelDavid.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="HelloWorldprocedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ActMobEquipo_delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDMobiliarioEquipoOficina" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActMobEquipo_detail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActMobEquipo_detail_v2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActMobEquipo_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDMobiliarioEquipoOficina" Type="int" Mode="In" />
+          <Parameter Name="NombreMobiliarioEquiposOficina" Type="varchar" Mode="In" />
+          <Parameter Name="CaracterísticasDelBien" Type="varchar" Mode="In" />
+          <Parameter Name="CostosDeAdquisición" Type="float" Mode="In" />
+          <Parameter Name="FechaDeAdquisición" Type="date" Mode="In" />
+          <Parameter Name="MarcaDelBien" Type="varchar" Mode="In" />
+          <Parameter Name="ReferenciasTécnicasDelBien" Type="varchar" Mode="In" />
+          <Parameter Name="TiempoDeVidaEstimada" Type="int" Mode="In" />
+          <Parameter Name="CodificacionCostoDeAdquisición" Type="varchar" Mode="In" />
+          <Parameter Name="CodificaciónParaDepreciaciónAcumulada" Type="varchar" Mode="In" />
+          <Parameter Name="CaracterísticasGeneralesDelActivo" Type="varchar" Mode="In" />
+          <Parameter Name="CodificaciónDelControlador" Type="varchar" Mode="In" />
+          <Parameter Name="IDEntidad" Type="int" Mode="In" />
+          <Parameter Name="IdMetodosDepreciación" Type="int" Mode="In" />
+          <Parameter Name="IdDepartamentoActivoEquipo" Type="int" Mode="In" />
+          <Parameter Name="ValorDeDepreciaciónAnual" Type="float" Mode="In" />
+          <Parameter Name="FechaDepresiado" Type="date" Mode="In" />
+        </Function>
+        <Function Name="SP_ActMobEquipo_toList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ActMobEquipo_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDMobiliarioEquipoOficina" Type="int" Mode="In" />
+          <Parameter Name="NombreMobiliarioEquiposOficina" Type="varchar" Mode="In" />
+          <Parameter Name="CaracterísticasDelBien" Type="varchar" Mode="In" />
+          <Parameter Name="CostosDeAdquisición" Type="float" Mode="In" />
+          <Parameter Name="FechaDeAdquisición" Type="date" Mode="In" />
+          <Parameter Name="MarcaDelBien" Type="varchar" Mode="In" />
+          <Parameter Name="ReferenciasTécnicasDelBien" Type="varchar" Mode="In" />
+          <Parameter Name="TiempoDeVidaEstimada" Type="int" Mode="In" />
+          <Parameter Name="CodificacionCostoDeAdquisición" Type="varchar" Mode="In" />
+          <Parameter Name="CodificaciónParaDepreciaciónAcumulada" Type="varchar" Mode="In" />
+          <Parameter Name="CaracterísticasGeneralesDelActivo" Type="varchar" Mode="In" />
+          <Parameter Name="CodificaciónDelControlador" Type="varchar" Mode="In" />
+          <Parameter Name="IDEntidad" Type="int" Mode="In" />
+          <Parameter Name="IdMetodosDepreciación" Type="int" Mode="In" />
+          <Parameter Name="IdDepartamentoActivoEquipo" Type="int" Mode="In" />
+          <Parameter Name="FechaDepresiado" Type="date" Mode="In" />
+        </Function>
+        <Function Name="SP_ActTerreno_delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NoRegistroActivosTerrenos" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActTerreno_detail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActTerreno_detail_v2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_ActTerreno_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NoRegistroActivosTerrenos" Type="int" Mode="In" />
+          <Parameter Name="FechaDeAdquisicionActivosTerrenos" Type="date" Mode="In" />
+          <Parameter Name="TamañoDelTerrenoVsqr2ActivosTerrenos" Type="float" Mode="In" />
+          <Parameter Name="CostoDeAdquisiciónActivosTerrenos" Type="float" Mode="In" />
+          <Parameter Name="ExperimentoDeReevaluaciónParaPlusvalía" Type="char" Mode="In" />
+          <Parameter Name="TasaCrecimiento" Type="int" Mode="In" />
+          <Parameter Name="CódigoContableActivosTerrenos" Type="varchar" Mode="In" />
+          <Parameter Name="IDEntidad" Type="int" Mode="In" />
+          <Parameter Name="IdSector" Type="char" Mode="In" />
+          <Parameter Name="IdTipoEdificioConstruido" Type="int" Mode="In" />
+          <Parameter Name="ValorDeLaPlusvalía" Type="float" Mode="In" />
+          <Parameter Name="FechaDeReevaluacionAplicada" Type="date" Mode="In" />
+        </Function>
+        <Function Name="SP_ActTerreno_toList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_ActTerreno_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NoRegistroActivosTerrenos" Type="int" Mode="In" />
+          <Parameter Name="FechaDeAdquisicionActivosTerrenos" Type="date" Mode="In" />
+          <Parameter Name="TamañoDelTerrenoVsqr2ActivosTerrenos" Type="float" Mode="In" />
+          <Parameter Name="CostoDeAdquisiciónActivosTerrenos" Type="float" Mode="In" />
+          <Parameter Name="ExperimentoDeReevaluaciónParaPlusvalía" Type="char" Mode="In" />
+          <Parameter Name="TasaCrecimiento" Type="int" Mode="In" />
+          <Parameter Name="CódigoContableActivosTerrenos" Type="varchar" Mode="In" />
+          <Parameter Name="IDEntidad" Type="int" Mode="In" />
+          <Parameter Name="IdSector" Type="char" Mode="In" />
+          <Parameter Name="IdTipoEdificioConstruido" Type="int" Mode="In" />
+          <Parameter Name="FechaDelAjustePorCréditoDePlusvalía" Type="date" Mode="In" />
+          <Parameter Name="ValorDeLaPlusvalía" Type="float" Mode="In" />
+          <Parameter Name="CostoTotalActualDelTerreno" Type="float" Mode="In" />
+          <Parameter Name="FechaDeReevaluacionAplicada" Type="date" Mode="In" />
+        </Function>
+        <Function Name="SP_DepActEqui_delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdDepartamentoActivoEquipo" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_DepActEqui_detail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_DepActEqui_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NombreDepartamentoAsignado" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_DepActEqui_toList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_DepActEqui_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdDepartamentoActivoEquipo" Type="int" Mode="In" />
+          <Parameter Name="NombreDepartamentoAsignado" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="SP_Entidad_delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDEntidad" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Entidad_detail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_Entidad_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NombreEntidad" Type="varchar" Mode="In" />
+          <Parameter Name="DirecciónEntidad" Type="varchar" Mode="In" />
+          <Parameter Name="TelefonoEntidad" Type="varchar" Mode="In" />
+          <Parameter Name="EmailEntidad" Type="varchar" Mode="In" />
+          <Parameter Name="RUCEntidad" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Entidad_toList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Entidad_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IDEntidad" Type="int" Mode="In" />
+          <Parameter Name="NombreEntidad" Type="varchar" Mode="In" />
+          <Parameter Name="DirecciónEntidad" Type="varchar" Mode="In" />
+          <Parameter Name="TelefonoEntidad" Type="varchar" Mode="In" />
+          <Parameter Name="EmailEntidad" Type="varchar" Mode="In" />
+          <Parameter Name="RUCEntidad" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_MetDepre_deatail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_MetDepre_delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdMetodosDepreciación" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_MetDepre_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NombreMetodoDepreciación" Type="varchar" Mode="In" />
+          <Parameter Name="CaracteristicaMetodo" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_MetDepre_toList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_MetDepre_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdMetodosDepreciación" Type="int" Mode="In" />
+          <Parameter Name="NombreMetodoDepreciación" Type="varchar" Mode="In" />
+          <Parameter Name="CaracteristicaMetodo" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Sectores_delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdSector" Type="char" Mode="In" />
+        </Function>
+        <Function Name="SP_Sectores_detail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="char" Mode="In" />
+        </Function>
+        <Function Name="SP_Sectores_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdSector" Type="char" Mode="In" />
+          <Parameter Name="DescripcionSector" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_Sectores_toList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_Sectores_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdSector" Type="char" Mode="In" />
+          <Parameter Name="DescripcionSector" Type="varchar" Mode="In" />
+          <Parameter Name="NewIdSector" Type="char" Mode="In" />
+        </Function>
+        <Function Name="SP_TipoEdificioConstru_delte" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdTipoEdificioConstruido" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_TipoEdificioConstru_detail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_TipoEdificioConstru_insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NombreTipoEdificio" Type="varchar" Mode="In" />
+          <Parameter Name="Descripcion" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_TipoEdificioConstru_toList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_TipoEdificioConstru_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdTipoEdificioConstruido" Type="int" Mode="In" />
+          <Parameter Name="NombreTipoEdificio" Type="varchar" Mode="In" />
+          <Parameter Name="Descripcion" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="ControlActivosModelDavidStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ControlActivosModelDavid" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ControlActivosEntitiesDavid" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="SP_TipoEdificioConstru_update_Result" ReturnType="Collection(ControlActivosModelDavid.SP_TipoEdificioConstru_update_Result)">
+            <Parameter Name="IdTipoEdificioConstruido" Mode="In" Type="Int32" />
+            <Parameter Name="NombreTipoEdificio" Mode="In" Type="String" />
+            <Parameter Name="Descripcion" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_TipoEdificioConstru_toList_Result" ReturnType="Collection(ControlActivosModelDavid.SP_TipoEdificioConstru_toList_Result)" />
+          <FunctionImport Name="SP_TipoEdificioConstru_insert_Result" ReturnType="Collection(ControlActivosModelDavid.SP_TipoEdificioConstru_insert_Result)">
+            <Parameter Name="NombreTipoEdificio" Mode="In" Type="String" />
+            <Parameter Name="Descripcion" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_TipoEdificioConstru_detail_Result" ReturnType="Collection(ControlActivosModelDavid.SP_TipoEdificioConstru_detail_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_TipoEdificioConstru_delte_Result" ReturnType="Collection(ControlActivosModelDavid.SP_TipoEdificioConstru_delte_Result)">
+            <Parameter Name="IdTipoEdificioConstruido" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Sectores_update_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Sectores_update_Result)">
+            <Parameter Name="IdSector" Mode="In" Type="String" />
+            <Parameter Name="DescripcionSector" Mode="In" Type="String" />
+            <Parameter Name="NewIdSector" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Sectores_toList_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Sectores_toList_Result)" />
+          <FunctionImport Name="SP_Sectores_insert_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Sectores_insert_Result)">
+            <Parameter Name="IdSector" Mode="In" Type="String" />
+            <Parameter Name="DescripcionSector" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Sectores_detail_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Sectores_detail_Result)">
+            <Parameter Name="id" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Sectores_delete_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Sectores_delete_Result)">
+            <Parameter Name="IdSector" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MetDepre_update_Result" ReturnType="Collection(ControlActivosModelDavid.SP_MetDepre_update_Result)">
+            <Parameter Name="IdMetodosDepreciación" Mode="In" Type="Int32" />
+            <Parameter Name="NombreMetodoDepreciación" Mode="In" Type="String" />
+            <Parameter Name="CaracteristicaMetodo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MetDepre_toList_Result" ReturnType="Collection(ControlActivosModelDavid.SP_MetDepre_toList_Result)" />
+          <FunctionImport Name="SP_MetDepre_insert_Result" ReturnType="Collection(ControlActivosModelDavid.SP_MetDepre_insert_Result)">
+            <Parameter Name="NombreMetodoDepreciación" Mode="In" Type="String" />
+            <Parameter Name="CaracteristicaMetodo" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MetDepre_delete_Result" ReturnType="Collection(ControlActivosModelDavid.SP_MetDepre_delete_Result)">
+            <Parameter Name="IdMetodosDepreciación" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_MetDepre_deatail_Result" ReturnType="Collection(ControlActivosModelDavid.SP_MetDepre_deatail_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Entidad_update_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Entidad_update_Result)">
+            <Parameter Name="IDEntidad" Mode="In" Type="Int32" />
+            <Parameter Name="NombreEntidad" Mode="In" Type="String" />
+            <Parameter Name="DirecciónEntidad" Mode="In" Type="String" />
+            <Parameter Name="TelefonoEntidad" Mode="In" Type="String" />
+            <Parameter Name="EmailEntidad" Mode="In" Type="String" />
+            <Parameter Name="RUCEntidad" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Entidad_toList_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Entidad_toList_Result)" />
+          <FunctionImport Name="SP_Entidad_insert_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Entidad_insert_Result)">
+            <Parameter Name="NombreEntidad" Mode="In" Type="String" />
+            <Parameter Name="DirecciónEntidad" Mode="In" Type="String" />
+            <Parameter Name="TelefonoEntidad" Mode="In" Type="String" />
+            <Parameter Name="EmailEntidad" Mode="In" Type="String" />
+            <Parameter Name="RUCEntidad" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Entidad_detail_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Entidad_detail_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_Entidad_delete_Result" ReturnType="Collection(ControlActivosModelDavid.SP_Entidad_delete_Result)">
+            <Parameter Name="IDEntidad" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DepActEqui_update_Result" ReturnType="Collection(ControlActivosModelDavid.SP_DepActEqui_update_Result)">
+            <Parameter Name="IdDepartamentoActivoEquipo" Mode="In" Type="Int32" />
+            <Parameter Name="NombreDepartamentoAsignado" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DepActEqui_toList_Result" ReturnType="Collection(ControlActivosModelDavid.SP_DepActEqui_toList_Result)" />
+          <FunctionImport Name="SP_DepActEqui_insert_Result" ReturnType="Collection(ControlActivosModelDavid.SP_DepActEqui_insert_Result)">
+            <Parameter Name="NombreDepartamentoAsignado" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DepActEqui_detail_Result" ReturnType="Collection(ControlActivosModelDavid.SP_DepActEqui_detail_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_DepActEqui_delete_Result" ReturnType="Collection(ControlActivosModelDavid.SP_DepActEqui_delete_Result)">
+            <Parameter Name="IdDepartamentoActivoEquipo" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActTerreno_update_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActTerreno_update_Result)">
+            <Parameter Name="NoRegistroActivosTerrenos" Mode="In" Type="Int32" />
+            <Parameter Name="FechaDeAdquisicionActivosTerrenos" Mode="In" Type="DateTime" />
+            <Parameter Name="TamañoDelTerrenoVsqr2ActivosTerrenos" Mode="In" Type="Double" />
+            <Parameter Name="CostoDeAdquisiciónActivosTerrenos" Mode="In" Type="Double" />
+            <Parameter Name="ExperimentoDeReevaluaciónParaPlusvalía" Mode="In" Type="String" />
+            <Parameter Name="TasaCrecimiento" Mode="In" Type="Int32" />
+            <Parameter Name="CódigoContableActivosTerrenos" Mode="In" Type="String" />
+            <Parameter Name="IDEntidad" Mode="In" Type="Int32" />
+            <Parameter Name="IdSector" Mode="In" Type="String" />
+            <Parameter Name="IdTipoEdificioConstruido" Mode="In" Type="Int32" />
+            <Parameter Name="FechaDelAjustePorCréditoDePlusvalía" Mode="In" Type="DateTime" />
+            <Parameter Name="ValorDeLaPlusvalía" Mode="In" Type="Double" />
+            <Parameter Name="CostoTotalActualDelTerreno" Mode="In" Type="Double" />
+            <Parameter Name="FechaDeReevaluacionAplicada" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActTerreno_toList_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActTerreno_toList_Result)" />
+          <FunctionImport Name="SP_ActTerreno_insert_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActTerreno_insert_Result)">
+            <Parameter Name="NoRegistroActivosTerrenos" Mode="In" Type="Int32" />
+            <Parameter Name="FechaDeAdquisicionActivosTerrenos" Mode="In" Type="DateTime" />
+            <Parameter Name="TamañoDelTerrenoVsqr2ActivosTerrenos" Mode="In" Type="Double" />
+            <Parameter Name="CostoDeAdquisiciónActivosTerrenos" Mode="In" Type="Double" />
+            <Parameter Name="ExperimentoDeReevaluaciónParaPlusvalía" Mode="In" Type="String" />
+            <Parameter Name="TasaCrecimiento" Mode="In" Type="Int32" />
+            <Parameter Name="CódigoContableActivosTerrenos" Mode="In" Type="String" />
+            <Parameter Name="IDEntidad" Mode="In" Type="Int32" />
+            <Parameter Name="IdSector" Mode="In" Type="String" />
+            <Parameter Name="IdTipoEdificioConstruido" Mode="In" Type="Int32" />
+            <Parameter Name="ValorDeLaPlusvalía" Mode="In" Type="Double" />
+            <Parameter Name="FechaDeReevaluacionAplicada" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActTerreno_detail_v2_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActTerreno_detail_v2_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActTerreno_detail_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActTerreno_detail_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActTerreno_delete_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActTerreno_delete_Result)">
+            <Parameter Name="NoRegistroActivosTerrenos" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActMobEquipo_update_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActMobEquipo_update_Result)">
+            <Parameter Name="IDMobiliarioEquipoOficina" Mode="In" Type="Int32" />
+            <Parameter Name="NombreMobiliarioEquiposOficina" Mode="In" Type="String" />
+            <Parameter Name="CaracterísticasDelBien" Mode="In" Type="String" />
+            <Parameter Name="CostosDeAdquisición" Mode="In" Type="Double" />
+            <Parameter Name="FechaDeAdquisición" Mode="In" Type="DateTime" />
+            <Parameter Name="MarcaDelBien" Mode="In" Type="String" />
+            <Parameter Name="ReferenciasTécnicasDelBien" Mode="In" Type="String" />
+            <Parameter Name="TiempoDeVidaEstimada" Mode="In" Type="Int32" />
+            <Parameter Name="CodificacionCostoDeAdquisición" Mode="In" Type="String" />
+            <Parameter Name="CodificaciónParaDepreciaciónAcumulada" Mode="In" Type="String" />
+            <Parameter Name="CaracterísticasGeneralesDelActivo" Mode="In" Type="String" />
+            <Parameter Name="CodificaciónDelControlador" Mode="In" Type="String" />
+            <Parameter Name="IDEntidad" Mode="In" Type="Int32" />
+            <Parameter Name="IdMetodosDepreciación" Mode="In" Type="Int32" />
+            <Parameter Name="IdDepartamentoActivoEquipo" Mode="In" Type="Int32" />
+            <Parameter Name="FechaDepresiado" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActMobEquipo_toList_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActMobEquipo_toList_Result)" />
+          <FunctionImport Name="SP_ActMobEquipo_insert_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActMobEquipo_insert_Result)">
+            <Parameter Name="IDMobiliarioEquipoOficina" Mode="In" Type="Int32" />
+            <Parameter Name="NombreMobiliarioEquiposOficina" Mode="In" Type="String" />
+            <Parameter Name="CaracterísticasDelBien" Mode="In" Type="String" />
+            <Parameter Name="CostosDeAdquisición" Mode="In" Type="Double" />
+            <Parameter Name="FechaDeAdquisición" Mode="In" Type="DateTime" />
+            <Parameter Name="MarcaDelBien" Mode="In" Type="String" />
+            <Parameter Name="ReferenciasTécnicasDelBien" Mode="In" Type="String" />
+            <Parameter Name="TiempoDeVidaEstimada" Mode="In" Type="Int32" />
+            <Parameter Name="CodificacionCostoDeAdquisición" Mode="In" Type="String" />
+            <Parameter Name="CodificaciónParaDepreciaciónAcumulada" Mode="In" Type="String" />
+            <Parameter Name="CaracterísticasGeneralesDelActivo" Mode="In" Type="String" />
+            <Parameter Name="CodificaciónDelControlador" Mode="In" Type="String" />
+            <Parameter Name="IDEntidad" Mode="In" Type="Int32" />
+            <Parameter Name="IdMetodosDepreciación" Mode="In" Type="Int32" />
+            <Parameter Name="IdDepartamentoActivoEquipo" Mode="In" Type="Int32" />
+            <Parameter Name="ValorDeDepreciaciónAnual" Mode="In" Type="Double" />
+            <Parameter Name="FechaDepresiado" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActMobEquipo_detail_v2_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActMobEquipo_detail_v2_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActMobEquipo_detail_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActMobEquipo_detail_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_ActMobEquipo_delete_Result" ReturnType="Collection(ControlActivosModelDavid.SP_ActMobEquipo_delete_Result)">
+            <Parameter Name="IDMobiliarioEquipoOficina" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="SP_TipoEdificioConstru_update_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_TipoEdificioConstru_toList_Result">
+          <Property Type="Int32" Name="IdTipoEdificioConstruido" Nullable="false" />
+          <Property Type="String" Name="NombreTipoEdificio" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="DescripcionTipo" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_TipoEdificioConstru_insert_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_TipoEdificioConstru_detail_Result">
+          <Property Type="Int32" Name="IdTipoEdificioConstruido" Nullable="false" />
+          <Property Type="String" Name="NombreTipoEdificio" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="DescripcionTipo" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_TipoEdificioConstru_delte_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Sectores_update_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Sectores_toList_Result">
+          <Property Type="String" Name="IdSector" Nullable="false" MaxLength="1" />
+          <Property Type="String" Name="DescripcionSector" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="SP_Sectores_insert_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Sectores_detail_Result">
+          <Property Type="String" Name="IdSector" Nullable="false" MaxLength="1" />
+          <Property Type="String" Name="DescripcionSector" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="SP_Sectores_delete_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MetDepre_update_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MetDepre_toList_Result">
+          <Property Type="Int32" Name="IdMetodosDepreciación" Nullable="false" />
+          <Property Type="String" Name="NombreMetodoDepreciación" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="CaracteristicaMetodo" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_MetDepre_insert_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MetDepre_delete_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_MetDepre_deatail_Result">
+          <Property Type="Int32" Name="IdMetodosDepreciación" Nullable="false" />
+          <Property Type="String" Name="NombreMetodoDepreciación" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="CaracteristicaMetodo" Nullable="false" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_Entidad_update_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Entidad_toList_Result">
+          <Property Type="Int32" Name="IDEntidad" Nullable="false" />
+          <Property Type="String" Name="NombreEntidad" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="DirecciónEntidad" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="TelefonoEntidad" Nullable="false" MaxLength="9" />
+          <Property Type="String" Name="EmailEntidad" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="RUCEntidad" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="SP_Entidad_insert_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_Entidad_detail_Result">
+          <Property Type="Int32" Name="IDEntidad" Nullable="false" />
+          <Property Type="String" Name="NombreEntidad" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="DirecciónEntidad" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="TelefonoEntidad" Nullable="false" MaxLength="9" />
+          <Property Type="String" Name="EmailEntidad" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="RUCEntidad" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="SP_Entidad_delete_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_DepActEqui_update_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_DepActEqui_toList_Result">
+          <Property Type="Int32" Name="IdDepartamentoActivoEquipo" Nullable="false" />
+          <Property Type="String" Name="NombreDepartamentoAsignado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_DepActEqui_insert_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_DepActEqui_detail_Result">
+          <Property Type="Int32" Name="IdDepartamentoActivoEquipo" Nullable="false" />
+          <Property Type="String" Name="NombreDepartamentoAsignado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_DepActEqui_delete_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ActTerreno_update_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ActTerreno_toList_Result">
+          <Property Type="Int32" Name="NoRegistroActivosTerrenos" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDeAdquisicionActivosTerrenos" Nullable="false" />
+          <Property Type="Double" Name="CostoDeAdquisiciónActivosTerrenos" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDeReevaluacionAplicada" Nullable="true" />
+          <Property Type="Double" Name="ValorDeLaPlusvalía" Nullable="true" />
+          <Property Type="Double" Name="CostoTotalActualDelTerreno" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDelAjustePorCréditoDePlusvalía" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ActTerreno_insert_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ActTerreno_detail_v2_Result">
+          <Property Type="Int32" Name="NoRegistroActivosTerrenos" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDeAdquisicionActivosTerrenos" Nullable="false" />
+          <Property Type="Double" Name="TamañoDelTerrenoVsqr2ActivosTerrenos" Nullable="false" />
+          <Property Type="Double" Name="CostoDeAdquisiciónActivosTerrenos" Nullable="false" />
+          <Property Type="String" Name="ExperimentoDeReevaluaciónParaPlusvalía" Nullable="false" MaxLength="2" />
+          <Property Type="DateTime" Name="FechaDeReevaluacionAplicada" Nullable="true" />
+          <Property Type="Int32" Name="TasaCrecimiento" Nullable="false" />
+          <Property Type="Double" Name="ValorDeLaPlusvalía" Nullable="true" />
+          <Property Type="Double" Name="CostoTotalActualDelTerreno" Nullable="false" />
+          <Property Type="String" Name="CódigoContableActivosTerrenos" Nullable="false" MaxLength="8" />
+          <Property Type="DateTime" Name="FechaDelAjustePorCréditoDePlusvalía" Nullable="true" />
+          <Property Type="String" Name="CreadoPorTerrenos" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="IDEntidad" Nullable="false" />
+          <Property Type="String" Name="IdSector" Nullable="false" MaxLength="1" />
+          <Property Type="Int32" Name="IdTipoEdificioConstruido" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ActTerreno_detail_Result">
+          <Property Type="Int32" Name="NoRegistroActivosTerrenos" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDeAdquisicionActivosTerrenos" Nullable="false" />
+          <Property Type="Double" Name="TamañoDelTerrenoVsqr2ActivosTerrenos" Nullable="false" />
+          <Property Type="Double" Name="CostoDeAdquisiciónActivosTerrenos" Nullable="false" />
+          <Property Type="String" Name="ExperimentoDeReevaluaciónParaPlusvalía" Nullable="false" MaxLength="2" />
+          <Property Type="DateTime" Name="FechaDeReevaluacionAplicada" Nullable="true" />
+          <Property Type="Int32" Name="TasaCrecimiento" Nullable="false" />
+          <Property Type="Double" Name="ValorDeLaPlusvalía" Nullable="true" />
+          <Property Type="Double" Name="CostoTotalActualDelTerreno" Nullable="false" />
+          <Property Type="String" Name="CódigoContableActivosTerrenos" Nullable="false" MaxLength="8" />
+          <Property Type="DateTime" Name="FechaDelAjustePorCréditoDePlusvalía" Nullable="true" />
+          <Property Type="String" Name="CreadoPorTerrenos" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Entidad" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Sector" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Edificio" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_ActTerreno_delete_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ActMobEquipo_update_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ActMobEquipo_toList_Result">
+          <Property Type="String" Name="NombreMobiliarioEquiposOficina" Nullable="false" MaxLength="100" />
+          <Property Type="Double" Name="CostosDeAdquisición" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDeAdquisición" Nullable="false" />
+          <Property Type="String" Name="MarcaDelBien" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="TiempoDeVidaEstimada" Nullable="false" />
+          <Property Type="Double" Name="ValorDeDepreciaciónAnual" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ActMobEquipo_insert_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ActMobEquipo_detail_v2_Result">
+          <Property Type="Int32" Name="IDMobiliarioEquipoOficina" Nullable="false" />
+          <Property Type="String" Name="NombreMobiliarioEquiposOficina" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="CaracterísticasDelBien" Nullable="false" MaxLength="100" />
+          <Property Type="Double" Name="CostosDeAdquisición" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDeAdquisición" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDepresiado" Nullable="true" />
+          <Property Type="String" Name="MarcaDelBien" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ReferenciasTécnicasDelBien" Nullable="false" MaxLength="60" />
+          <Property Type="Int32" Name="TiempoDeVidaEstimada" Nullable="false" />
+          <Property Type="Double" Name="ValorDeDepreciaciónAnual" Nullable="true" />
+          <Property Type="String" Name="CodificacionCostoDeAdquisición" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="CodificaciónParaDepreciaciónAcumulada" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="CaracterísticasGeneralesDelActivo" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="CodificaciónDelControlador" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="CreadoPorMobEquiOfic" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="IDEntidad" Nullable="false" />
+          <Property Type="Int32" Name="IdMetodosDepreciación" Nullable="false" />
+          <Property Type="Int32" Name="IdDepartamentoActivoEquipo" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_ActMobEquipo_detail_Result">
+          <Property Type="Int32" Name="IDMobiliarioEquipoOficina" Nullable="false" />
+          <Property Type="String" Name="NombreMobiliarioEquiposOficina" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="CaracterísticasDelBien" Nullable="false" MaxLength="100" />
+          <Property Type="Double" Name="CostosDeAdquisición" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDeAdquisición" Nullable="false" />
+          <Property Type="DateTime" Name="FechaDepresiado" Nullable="true" />
+          <Property Type="String" Name="MarcaDelBien" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ReferenciasTécnicasDelBien" Nullable="false" MaxLength="60" />
+          <Property Type="Int32" Name="TiempoDeVidaEstimada" Nullable="false" />
+          <Property Type="Double" Name="ValorDeDepreciaciónAnual" Nullable="true" />
+          <Property Type="String" Name="CodificacionCostoDeAdquisición" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="CodificaciónParaDepreciaciónAcumulada" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="CaracterísticasGeneralesDelActivo" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="CodificaciónDelControlador" Nullable="false" MaxLength="25" />
+          <Property Type="String" Name="CreadoPorMobEquiOfic" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Entidad" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Metodo_Depreciación" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Departamento" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_ActMobEquipo_delete_Result">
+          <Property Type="Int32" Name="estado" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ControlActivosModelDavidStoreContainer" CdmEntityContainer="ControlActivosEntitiesDavid" >
+          <FunctionImportMapping FunctionImportName="SP_TipoEdificioConstru_update_Result" FunctionName="ControlActivosModelDavid.Store.SP_TipoEdificioConstru_update">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_TipoEdificioConstru_update_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_TipoEdificioConstru_toList_Result" FunctionName="ControlActivosModelDavid.Store.SP_TipoEdificioConstru_toList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_TipoEdificioConstru_toList_Result">
+                <ScalarProperty Name="IdTipoEdificioConstruido" ColumnName="IdTipoEdificioConstruido" />
+                <ScalarProperty Name="NombreTipoEdificio" ColumnName="NombreTipoEdificio" />
+                <ScalarProperty Name="DescripcionTipo" ColumnName="DescripcionTipo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_TipoEdificioConstru_insert_Result" FunctionName="ControlActivosModelDavid.Store.SP_TipoEdificioConstru_insert">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_TipoEdificioConstru_insert_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_TipoEdificioConstru_detail_Result" FunctionName="ControlActivosModelDavid.Store.SP_TipoEdificioConstru_detail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_TipoEdificioConstru_detail_Result">
+                <ScalarProperty Name="IdTipoEdificioConstruido" ColumnName="IdTipoEdificioConstruido" />
+                <ScalarProperty Name="NombreTipoEdificio" ColumnName="NombreTipoEdificio" />
+                <ScalarProperty Name="DescripcionTipo" ColumnName="DescripcionTipo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_TipoEdificioConstru_delte_Result" FunctionName="ControlActivosModelDavid.Store.SP_TipoEdificioConstru_delte">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_TipoEdificioConstru_delte_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Sectores_update_Result" FunctionName="ControlActivosModelDavid.Store.SP_Sectores_update">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Sectores_update_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Sectores_toList_Result" FunctionName="ControlActivosModelDavid.Store.SP_Sectores_toList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Sectores_toList_Result">
+                <ScalarProperty Name="IdSector" ColumnName="IdSector" />
+                <ScalarProperty Name="DescripcionSector" ColumnName="DescripcionSector" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Sectores_insert_Result" FunctionName="ControlActivosModelDavid.Store.SP_Sectores_insert">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Sectores_insert_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Sectores_detail_Result" FunctionName="ControlActivosModelDavid.Store.SP_Sectores_detail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Sectores_detail_Result">
+                <ScalarProperty Name="IdSector" ColumnName="IdSector" />
+                <ScalarProperty Name="DescripcionSector" ColumnName="DescripcionSector" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Sectores_delete_Result" FunctionName="ControlActivosModelDavid.Store.SP_Sectores_delete">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Sectores_delete_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MetDepre_update_Result" FunctionName="ControlActivosModelDavid.Store.SP_MetDepre_update">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_MetDepre_update_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MetDepre_toList_Result" FunctionName="ControlActivosModelDavid.Store.SP_MetDepre_toList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_MetDepre_toList_Result">
+                <ScalarProperty Name="IdMetodosDepreciación" ColumnName="IdMetodosDepreciación" />
+                <ScalarProperty Name="NombreMetodoDepreciación" ColumnName="NombreMetodoDepreciación" />
+                <ScalarProperty Name="CaracteristicaMetodo" ColumnName="CaracteristicaMetodo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MetDepre_insert_Result" FunctionName="ControlActivosModelDavid.Store.SP_MetDepre_insert">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_MetDepre_insert_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MetDepre_delete_Result" FunctionName="ControlActivosModelDavid.Store.SP_MetDepre_delete">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_MetDepre_delete_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_MetDepre_deatail_Result" FunctionName="ControlActivosModelDavid.Store.SP_MetDepre_deatail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_MetDepre_deatail_Result">
+                <ScalarProperty Name="IdMetodosDepreciación" ColumnName="IdMetodosDepreciación" />
+                <ScalarProperty Name="NombreMetodoDepreciación" ColumnName="NombreMetodoDepreciación" />
+                <ScalarProperty Name="CaracteristicaMetodo" ColumnName="CaracteristicaMetodo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Entidad_update_Result" FunctionName="ControlActivosModelDavid.Store.SP_Entidad_update">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Entidad_update_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Entidad_toList_Result" FunctionName="ControlActivosModelDavid.Store.SP_Entidad_toList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Entidad_toList_Result">
+                <ScalarProperty Name="IDEntidad" ColumnName="IDEntidad" />
+                <ScalarProperty Name="NombreEntidad" ColumnName="NombreEntidad" />
+                <ScalarProperty Name="DirecciónEntidad" ColumnName="DirecciónEntidad" />
+                <ScalarProperty Name="TelefonoEntidad" ColumnName="TelefonoEntidad" />
+                <ScalarProperty Name="EmailEntidad" ColumnName="EmailEntidad" />
+                <ScalarProperty Name="RUCEntidad" ColumnName="RUCEntidad" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Entidad_insert_Result" FunctionName="ControlActivosModelDavid.Store.SP_Entidad_insert">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Entidad_insert_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Entidad_detail_Result" FunctionName="ControlActivosModelDavid.Store.SP_Entidad_detail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Entidad_detail_Result">
+                <ScalarProperty Name="IDEntidad" ColumnName="IDEntidad" />
+                <ScalarProperty Name="NombreEntidad" ColumnName="NombreEntidad" />
+                <ScalarProperty Name="DirecciónEntidad" ColumnName="DirecciónEntidad" />
+                <ScalarProperty Name="TelefonoEntidad" ColumnName="TelefonoEntidad" />
+                <ScalarProperty Name="EmailEntidad" ColumnName="EmailEntidad" />
+                <ScalarProperty Name="RUCEntidad" ColumnName="RUCEntidad" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_Entidad_delete_Result" FunctionName="ControlActivosModelDavid.Store.SP_Entidad_delete">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_Entidad_delete_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_DepActEqui_update_Result" FunctionName="ControlActivosModelDavid.Store.SP_DepActEqui_update">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_DepActEqui_update_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_DepActEqui_toList_Result" FunctionName="ControlActivosModelDavid.Store.SP_DepActEqui_toList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_DepActEqui_toList_Result">
+                <ScalarProperty Name="IdDepartamentoActivoEquipo" ColumnName="IdDepartamentoActivoEquipo" />
+                <ScalarProperty Name="NombreDepartamentoAsignado" ColumnName="NombreDepartamentoAsignado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_DepActEqui_insert_Result" FunctionName="ControlActivosModelDavid.Store.SP_DepActEqui_insert">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_DepActEqui_insert_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_DepActEqui_detail_Result" FunctionName="ControlActivosModelDavid.Store.SP_DepActEqui_detail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_DepActEqui_detail_Result">
+                <ScalarProperty Name="IdDepartamentoActivoEquipo" ColumnName="IdDepartamentoActivoEquipo" />
+                <ScalarProperty Name="NombreDepartamentoAsignado" ColumnName="NombreDepartamentoAsignado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_DepActEqui_delete_Result" FunctionName="ControlActivosModelDavid.Store.SP_DepActEqui_delete">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_DepActEqui_delete_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActTerreno_update_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActTerreno_update">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActTerreno_update_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActTerreno_toList_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActTerreno_toList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActTerreno_toList_Result">
+                <ScalarProperty Name="NoRegistroActivosTerrenos" ColumnName="NoRegistroActivosTerrenos" />
+                <ScalarProperty Name="FechaDeAdquisicionActivosTerrenos" ColumnName="FechaDeAdquisicionActivosTerrenos" />
+                <ScalarProperty Name="CostoDeAdquisiciónActivosTerrenos" ColumnName="CostoDeAdquisiciónActivosTerrenos" />
+                <ScalarProperty Name="FechaDeReevaluacionAplicada" ColumnName="FechaDeReevaluacionAplicada" />
+                <ScalarProperty Name="ValorDeLaPlusvalía" ColumnName="ValorDeLaPlusvalía" />
+                <ScalarProperty Name="CostoTotalActualDelTerreno" ColumnName="CostoTotalActualDelTerreno" />
+                <ScalarProperty Name="FechaDelAjustePorCréditoDePlusvalía" ColumnName="FechaDelAjustePorCréditoDePlusvalía" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActTerreno_insert_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActTerreno_insert">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActTerreno_insert_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActTerreno_detail_v2_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActTerreno_detail_v2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActTerreno_detail_v2_Result">
+                <ScalarProperty Name="NoRegistroActivosTerrenos" ColumnName="NoRegistroActivosTerrenos" />
+                <ScalarProperty Name="FechaDeAdquisicionActivosTerrenos" ColumnName="FechaDeAdquisicionActivosTerrenos" />
+                <ScalarProperty Name="TamañoDelTerrenoVsqr2ActivosTerrenos" ColumnName="TamañoDelTerrenoVsqr2ActivosTerrenos" />
+                <ScalarProperty Name="CostoDeAdquisiciónActivosTerrenos" ColumnName="CostoDeAdquisiciónActivosTerrenos" />
+                <ScalarProperty Name="ExperimentoDeReevaluaciónParaPlusvalía" ColumnName="ExperimentoDeReevaluaciónParaPlusvalía" />
+                <ScalarProperty Name="FechaDeReevaluacionAplicada" ColumnName="FechaDeReevaluacionAplicada" />
+                <ScalarProperty Name="TasaCrecimiento" ColumnName="TasaCrecimiento" />
+                <ScalarProperty Name="ValorDeLaPlusvalía" ColumnName="ValorDeLaPlusvalía" />
+                <ScalarProperty Name="CostoTotalActualDelTerreno" ColumnName="CostoTotalActualDelTerreno" />
+                <ScalarProperty Name="CódigoContableActivosTerrenos" ColumnName="CódigoContableActivosTerrenos" />
+                <ScalarProperty Name="FechaDelAjustePorCréditoDePlusvalía" ColumnName="FechaDelAjustePorCréditoDePlusvalía" />
+                <ScalarProperty Name="CreadoPorTerrenos" ColumnName="CreadoPorTerrenos" />
+                <ScalarProperty Name="IDEntidad" ColumnName="IDEntidad" />
+                <ScalarProperty Name="IdSector" ColumnName="IdSector" />
+                <ScalarProperty Name="IdTipoEdificioConstruido" ColumnName="IdTipoEdificioConstruido" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActTerreno_detail_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActTerreno_detail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActTerreno_detail_Result">
+                <ScalarProperty Name="NoRegistroActivosTerrenos" ColumnName="NoRegistroActivosTerrenos" />
+                <ScalarProperty Name="FechaDeAdquisicionActivosTerrenos" ColumnName="FechaDeAdquisicionActivosTerrenos" />
+                <ScalarProperty Name="TamañoDelTerrenoVsqr2ActivosTerrenos" ColumnName="TamañoDelTerrenoVsqr2ActivosTerrenos" />
+                <ScalarProperty Name="CostoDeAdquisiciónActivosTerrenos" ColumnName="CostoDeAdquisiciónActivosTerrenos" />
+                <ScalarProperty Name="ExperimentoDeReevaluaciónParaPlusvalía" ColumnName="ExperimentoDeReevaluaciónParaPlusvalía" />
+                <ScalarProperty Name="FechaDeReevaluacionAplicada" ColumnName="FechaDeReevaluacionAplicada" />
+                <ScalarProperty Name="TasaCrecimiento" ColumnName="TasaCrecimiento" />
+                <ScalarProperty Name="ValorDeLaPlusvalía" ColumnName="ValorDeLaPlusvalía" />
+                <ScalarProperty Name="CostoTotalActualDelTerreno" ColumnName="CostoTotalActualDelTerreno" />
+                <ScalarProperty Name="CódigoContableActivosTerrenos" ColumnName="CódigoContableActivosTerrenos" />
+                <ScalarProperty Name="FechaDelAjustePorCréditoDePlusvalía" ColumnName="FechaDelAjustePorCréditoDePlusvalía" />
+                <ScalarProperty Name="CreadoPorTerrenos" ColumnName="CreadoPorTerrenos" />
+                <ScalarProperty Name="Entidad" ColumnName="Entidad" />
+                <ScalarProperty Name="Sector" ColumnName="Sector" />
+                <ScalarProperty Name="Edificio" ColumnName="Edificio" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActTerreno_delete_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActTerreno_delete">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActTerreno_delete_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActMobEquipo_update_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActMobEquipo_update">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActMobEquipo_update_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActMobEquipo_toList_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActMobEquipo_toList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActMobEquipo_toList_Result">
+                <ScalarProperty Name="NombreMobiliarioEquiposOficina" ColumnName="NombreMobiliarioEquiposOficina" />
+                <ScalarProperty Name="CostosDeAdquisición" ColumnName="CostosDeAdquisición" />
+                <ScalarProperty Name="FechaDeAdquisición" ColumnName="FechaDeAdquisición" />
+                <ScalarProperty Name="MarcaDelBien" ColumnName="MarcaDelBien" />
+                <ScalarProperty Name="TiempoDeVidaEstimada" ColumnName="TiempoDeVidaEstimada" />
+                <ScalarProperty Name="ValorDeDepreciaciónAnual" ColumnName="ValorDeDepreciaciónAnual" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActMobEquipo_insert_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActMobEquipo_insert">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActMobEquipo_insert_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActMobEquipo_detail_v2_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActMobEquipo_detail_v2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActMobEquipo_detail_v2_Result">
+                <ScalarProperty Name="IDMobiliarioEquipoOficina" ColumnName="IDMobiliarioEquipoOficina" />
+                <ScalarProperty Name="NombreMobiliarioEquiposOficina" ColumnName="NombreMobiliarioEquiposOficina" />
+                <ScalarProperty Name="CaracterísticasDelBien" ColumnName="CaracterísticasDelBien" />
+                <ScalarProperty Name="CostosDeAdquisición" ColumnName="CostosDeAdquisición" />
+                <ScalarProperty Name="FechaDeAdquisición" ColumnName="FechaDeAdquisición" />
+                <ScalarProperty Name="FechaDepresiado" ColumnName="FechaDepresiado" />
+                <ScalarProperty Name="MarcaDelBien" ColumnName="MarcaDelBien" />
+                <ScalarProperty Name="ReferenciasTécnicasDelBien" ColumnName="ReferenciasTécnicasDelBien" />
+                <ScalarProperty Name="TiempoDeVidaEstimada" ColumnName="TiempoDeVidaEstimada" />
+                <ScalarProperty Name="ValorDeDepreciaciónAnual" ColumnName="ValorDeDepreciaciónAnual" />
+                <ScalarProperty Name="CodificacionCostoDeAdquisición" ColumnName="CodificacionCostoDeAdquisición" />
+                <ScalarProperty Name="CodificaciónParaDepreciaciónAcumulada" ColumnName="CodificaciónParaDepreciaciónAcumulada" />
+                <ScalarProperty Name="CaracterísticasGeneralesDelActivo" ColumnName="CaracterísticasGeneralesDelActivo" />
+                <ScalarProperty Name="CodificaciónDelControlador" ColumnName="CodificaciónDelControlador" />
+                <ScalarProperty Name="CreadoPorMobEquiOfic" ColumnName="CreadoPorMobEquiOfic" />
+                <ScalarProperty Name="IDEntidad" ColumnName="IDEntidad" />
+                <ScalarProperty Name="IdMetodosDepreciación" ColumnName="IdMetodosDepreciación" />
+                <ScalarProperty Name="IdDepartamentoActivoEquipo" ColumnName="IdDepartamentoActivoEquipo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActMobEquipo_detail_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActMobEquipo_detail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActMobEquipo_detail_Result">
+                <ScalarProperty Name="IDMobiliarioEquipoOficina" ColumnName="IDMobiliarioEquipoOficina" />
+                <ScalarProperty Name="NombreMobiliarioEquiposOficina" ColumnName="NombreMobiliarioEquiposOficina" />
+                <ScalarProperty Name="CaracterísticasDelBien" ColumnName="CaracterísticasDelBien" />
+                <ScalarProperty Name="CostosDeAdquisición" ColumnName="CostosDeAdquisición" />
+                <ScalarProperty Name="FechaDeAdquisición" ColumnName="FechaDeAdquisición" />
+                <ScalarProperty Name="FechaDepresiado" ColumnName="FechaDepresiado" />
+                <ScalarProperty Name="MarcaDelBien" ColumnName="MarcaDelBien" />
+                <ScalarProperty Name="ReferenciasTécnicasDelBien" ColumnName="ReferenciasTécnicasDelBien" />
+                <ScalarProperty Name="TiempoDeVidaEstimada" ColumnName="TiempoDeVidaEstimada" />
+                <ScalarProperty Name="ValorDeDepreciaciónAnual" ColumnName="ValorDeDepreciaciónAnual" />
+                <ScalarProperty Name="CodificacionCostoDeAdquisición" ColumnName="CodificacionCostoDeAdquisición" />
+                <ScalarProperty Name="CodificaciónParaDepreciaciónAcumulada" ColumnName="CodificaciónParaDepreciaciónAcumulada" />
+                <ScalarProperty Name="CaracterísticasGeneralesDelActivo" ColumnName="CaracterísticasGeneralesDelActivo" />
+                <ScalarProperty Name="CodificaciónDelControlador" ColumnName="CodificaciónDelControlador" />
+                <ScalarProperty Name="CreadoPorMobEquiOfic" ColumnName="CreadoPorMobEquiOfic" />
+                <ScalarProperty Name="Entidad" ColumnName="Entidad" />
+                <ScalarProperty Name="Metodo_Depreciación" ColumnName="Metodo Depreciación" />
+                <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_ActMobEquipo_delete_Result" FunctionName="ControlActivosModelDavid.Store.SP_ActMobEquipo_delete">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ControlActivosModelDavid.SP_ActMobEquipo_delete_Result">
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

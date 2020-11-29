@@ -79,6 +79,16 @@
       <DependentUpon>ModelControlActivos.edmx</DependentUpon>
       <LastGenOutput>ModelControlActivos.cs</LastGenOutput>
     </Content>
+    <Content Include="ModelDavid.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDavid.edmx</DependentUpon>
+      <LastGenOutput>ModelDavid.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelDavid.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDavid.edmx</DependentUpon>
+      <LastGenOutput>ModelDavid.cs</LastGenOutput>
+    </Content>
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -98,124 +108,139 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelControlActivos.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ModelDavid.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDavid.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDavid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDavid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDavid.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SP_ActMobEquipo_delete_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActMobEquipo_detail_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActMobEquipo_detail_v2_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActMobEquipo_insert_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActMobEquipo_toList_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActMobEquipo_update_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_delete_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_delete_Result1.cs">
       <DependentUpon>ModelControlActivos.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_detail_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_detail_v2_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_insert_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_toList_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_ActTerreno_update_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_DepActEqui_delete_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_DepActEqui_detail_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_DepActEqui_insert_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_DepActEqui_toList_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_DepActEqui_update_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Entidad_delete_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Entidad_detail_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Entidad_insert_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Entidad_toList_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Entidad_update_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_MetDepre_deatail_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_MetDepre_delete_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_MetDepre_insert_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_MetDepre_toList_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_MetDepre_update_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Sectores_delete_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Sectores_detail_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Sectores_insert_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Sectores_toList_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_Sectores_update_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_TipoEdificioConstru_delte_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_TipoEdificioConstru_detail_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_TipoEdificioConstru_insert_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_TipoEdificioConstru_toList_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_TipoEdificioConstru_update_Result.cs">
-      <DependentUpon>ModelControlActivos.tt</DependentUpon>
+      <DependentUpon>ModelDavid.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +253,13 @@
     </EntityDeploy>
     <Content Include="ModelControlActivos.edmx.diagram">
       <DependentUpon>ModelControlActivos.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="ModelDavid.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelDavid.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ModelDavid.edmx.diagram">
+      <DependentUpon>ModelDavid.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
